@@ -1,0 +1,43 @@
+<html>
+<head>
+</head>
+<body>
+
+<div style="text-align: center;">
+<h1 style="color:red;"><b>Test Your Understanding</b></h1>
+</div>
+
+<p>
+For each chapter, we have developed a <span style="color:red;">test</span> to help you evaluate your
+understanding of the basic concepts and techniques covered in that
+chapter.
+</p>
+
+<p>
+Each chapter test is composed of <span style="color:red;">five questions</span>, selected randomly
+from a large set of questions associated with that chapter. Hence the
+test <span style="color:red;">may be retaken multiple times</span>.
+</p>
+
+<p>
+<span style="color:red;">Your Score:</span> For each question, if you answer it correctly on your
+first attempt, you receive 20 points. A correct answer on the second
+attempt yields 10 points, and no points are realized after the second attempt.
+<br>
+<br>
+
+<a href="chapter1.html">Chapter 1</a><br>
+<a href="chapter2.html">Chapter 2</a><br>
+<a href="chapter3.html">Chapter 3</a><br>
+<a href="chapter4.html">Chapter 4</a><br>
+<a href="chapter5.html">Chapter 5</a><br>
+<a href="chapter6.html">Chapter 6</a><br>
+<a href="chapter7.html">Chapter 7</a><br>
+<a href="chapter8.html">Chapter 8</a><br>
+<a href="chapter9.html">Chapter 9</a><br>
+<a href="chapter10.html">Chapter 10</a><br>
+<a href="chapter11.html">Chapter 11</a><br>
+<a href="chapter12.html">Chapter 12</a><br>
+<a href="chapter13.html">Chapter 13</a><br>
+
+</body>

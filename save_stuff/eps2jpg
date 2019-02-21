@@ -1,0 +1,3 @@
+#!/bin/bash
+out=`basename $1 .eps`.jpg
+epstopdf --res=100 --outfile=$out  --device=jpeg $1

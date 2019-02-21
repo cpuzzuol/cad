@@ -1,0 +1,1695 @@
+<html>
+  <head>
+  	<meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+    <script type="text/javascript">
+      var answer_value=[];
+    </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-43220622-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-43220622-5');
+</script>
+
+</head>
+<body>
+
+<div id="answer_dialog">
+</div>
+
+<div style="text-align: center;">
+<h1 style="color:blue;"><b>Test Your Understanding</b></h1>
+<h1 style="color:red;"><b>Chapter 4: Operational Amplifiers</b></h1>
+</div>
+
+
+<style>
+#scoretable td, #customers th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+
+#scoretable th {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+
+<div id="scorediv">
+<div style="text-align: center;">
+<h2 style="color:blue;"><b>Test Score</b></h2>
+<table id="scoretable" style="margin: 0 auto; border-collapse:
+                              collapse;">
+<tr>
+<th>&nbsp;Question&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Score</th>
+</tr>
+<tr class="score1" id="score1" style="display:none;">
+<td>4.1</td><td id="score1v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score2" id="score2" style="display:none;">
+<td>4.2</td><td id="score2v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score3" id="score3" style="display:none;">
+<td>4.3</td><td id="score3v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score4" id="score4" style="display:none;">
+<td>4.4</td><td id="score4v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score5" id="score5" style="display:none;">
+<td>4.5</td><td id="score5v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score6" id="score6" style="display:none;">
+<td>4.6</td><td id="score6v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score7" id="score7" style="display:none;">
+<td>4.7</td><td id="score7v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score8" id="score8" style="display:none;">
+<td>4.8</td><td id="score8v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score9" id="score9" style="display:none;">
+<td>4.9</td><td id="score9v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score10" id="score10" style="display:none;">
+<td>4.10</td><td id="score10v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score11" id="score11" style="display:none;">
+<td>4.11</td><td id="score11v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score12" id="score12" style="display:none;">
+<td>4.12</td><td id="score12v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score13" id="score13" style="display:none;">
+<td>4.13</td><td id="score13v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score14" id="score14" style="display:none;">
+<td>4.14</td><td id="score14v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score15" id="score15" style="display:none;">
+<td>4.15</td><td id="score15v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score16" id="score16" style="display:none;">
+<td>4.16</td><td id="score16v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score17" id="score17" style="display:none;">
+<td>4.17</td><td id="score17v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score18" id="score18" style="display:none;">
+<td>4.18</td><td id="score18v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score19" id="score19" style="display:none;">
+<td>4.19</td><td id="score19v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score20" id="score20" style="display:none;">
+<td>4.20</td><td id="score20v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score21" id="score21" style="display:none;">
+<td>4.21</td><td id="score21v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score22" id="score22" style="display:none;">
+<td>4.22</td><td id="score22v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score23" id="score23" style="display:none;">
+<td>4.23</td><td id="score23v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score24" id="score24" style="display:none;">
+<td>4.24</td><td id="score24v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score25" id="score25" style="display:none;">
+<td>4.25</td><td id="score25v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr id="score_total" style="background-color: #f2f2f2;"><td>Total</td><td>&nbsp;&nbsp;0 / 100</td></tr>
+</table>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="question1"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.1</span>
+    <span style="color:blue;">Op-Amp Pins</span></b></h2>
+Choose one answer.  Of an op amp’s 8 pins:
+</p>
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q1ai"/><input type="radio" name="q1" value="a" id="q1a"><label for="q1a">One is for input voltage and two are for output voltages.</label><br>
+<img src="blank.png" width="15" id="q1bi"/><input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Two are for input voltages and one is for output voltage.</label><br>
+<img src="blank.png" width="15" id="q1ci"/><input type="radio" name="q1" value="c" id="q1c"><label for="q1c">One is for input voltage, one is for output voltage, and two are for power supply voltages.</label><br>
+<img src="blank.png" width="15" id="q1di"/><input type="radio" name="q1" value="d" id="q1d"><label for="q1d">One is for input voltage, two are for output voltages, and two are for power supply voltages.</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q1a').checked = false;
+  document.getElementById('q1b').checked = false;
+  document.getElementById('q1c').checked = false;
+  document.getElementById('q1d').checked = false;
+answer_value[1] = "b";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question2"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.2</span>
+    <span style="color:blue;">Op-Amp Transfer Characteristics</span></b></h2>
+Choose one answer.
+</p>
+<img src="figs/4.2.jpg" width="213">
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q2ai"/><input type="radio" name="q2" value="a" id="q2a"><label for="q2a">The op-amp output &upsilon;<sub>0</sub> is proportional to
+    &upsilon;<sub>p</sub> and independent of &upsilon;<sub>n</sub> and
+    V<sub>cc</sub>.</label><br>
+<img src="blank.png" width="15" id="q2bi"/><input type="radio" name="q2" value="b" id="q2b"><label for="q2b">The op-amp output &upsilon;<sub>0</sub> is proportional to
+&upsilon;<sub>n</sub> and independent of &upsilon;<sub>p</sub> and
+V<sub>cc</sub>.</label><br>
+<img src="blank.png" width="15" id="q2ci"/><input type="radio" name="q2" value="c" id="q2c"><label for="q2c">The op-amp output voltage is proportional to (&upsilon;<sub>p</sub> -
+&upsilon;<sub>n</sub>) and totally independent of
+&upsilon;<sub>p</sub> and V<sub>cc</sub>.</label><br>
+<img src="blank.png" width="15" id="q2di"/><input type="radio" name="q2" value="d" id="q2d"><label for="q2d">The op-amp output voltage &upsilon;<sub>0</sub> is proportional to
+(&upsilon;<sub>p</sub> - &upsilon;<sub>n</sub>), so long as
+|&upsilon;<sub>0</sub>| &le; |V<sub>cc</sub>|.</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q2a').checked = false;
+  document.getElementById('q2b').checked = false;
+  document.getElementById('q2c').checked = false;
+  document.getElementById('q2d').checked = false;
+answer_value[2] = "d";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="question3"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.3</span>
+    <span style="color:blue;">Ideal Op-Amp Model</span></b></h2>
+</p>
+<img src="figs/4.3.jpg" width="306">
+
+<p>
+    <ul class="answers">
+Select the answer containing "all true" statements.
+
+<table>
+<tr>
+<td>
+<img src="blank.png" width="15" id="q3ai"/><input type="radio"
+                                                  name="q3" value="a"
+                                                  id="q3a"><label for="q3a">
+</td>
+  <td> $i_{\rm p}=i_{\rm n}=0$, </td>
+  <td> $\upsilon_{\rm p}=\upsilon_{\rm n}$, </td>
+  <td> $R_{\rm i}=0$, </td>
+  <td> $R_{\rm o}=0$ </td>
+</label><br>
+</tr>
+<tr>
+<td>
+<img src="blank.png" width="15" id="q3bi"/><input type="radio"
+                                                  name="q3" value="b"
+                                                  id="q3b"><label for="q3b">
+</td>
+  <td> $i_{\rm n}=0$, but $i_{\rm p}$ may be $\ne0$, </td>
+  <td> $\upsilon_{\rm p}=\upsilon_{\rm n}$, </td>
+  <td> $R_{\rm i}=0$, </td>
+  <td> $R_{\rm o}=0$ </td>
+</label><br>
+</tr>
+<tr>
+<td>
+<img src="blank.png" width="15" id="q3ci"/><input type="radio"
+                                                  name="q3" value="c"
+                                                  id="q3c"><label for="q3c">
+</td>
+  <td> $i_{\rm p}=i_{\rm n}$, </td>
+  <td> $\upsilon_{\rm p}=\upsilon_{\rm n}$, </td>
+  <td> $R_{\rm i}=\infty$, </td>
+  <td> $R_{\rm o}=0$ </td>
+</label><br>
+</tr>
+<tr>
+<td>
+<img src="blank.png" width="15" id="q3di"/><input type="radio"
+                                                  name="q3" value="d"
+                                                  id="q3d"><label for="q3d">
+</td>
+  <td> $i_{\rm p}=i_{\rm n}=0$, </td>
+  <td> $\upsilon_{\rm n}=0$, </td>
+  <td> $R_{\rm i}=\infty$, </td>
+  <td> $R_{\rm o}=\infty$ </td>
+</label><br>
+</tr>
+
+</table>
+
+    </ul>
+</p>
+<script>
+  document.getElementById('q3a').checked = false;
+  document.getElementById('q3b').checked = false;
+  document.getElementById('q3c').checked = false;
+  document.getElementById('q3d').checked = false;
+answer_value[3] = "c";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question4"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.4</span>
+    <span style="color:blue;">Ideal Op-Amp</span></b></h2>
+Choose an answer.
+</p>
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q4ai"/><input type="radio" name="q4" value="a" id="q4a"><label for="q4a">The ideal op-amp model is applicable for any load resistance R<sub>L</sub> connected at the output terminals:
+including a short circuit (R<sub>L</sub> = 0).</label><br>
+<img src="blank.png" width="15" id="q4bi"/><input type="radio" name="q4" value="b" id="q4b"><label for="q4b">The ideal op-amp model is applicable for any load resistance R<sub>L</sub> connected at the output terminals:
+so long as R<sub>L</sub> is not an open circuit.</label><br>
+<img src="blank.png" width="15" id="q4ci"/><input type="radio" name="q4" value="c" id="q4c"><label for="q4c">The ideal op-amp model is applicable for any load resistance R<sub>L</sub> connected at the output terminals:
+so long as R<sub>L</sub> &#8811; R<sub>0</sub>, where R<sub>0</sub> is the output resistance of the op amp itself.
+</label><br>
+<img src="blank.png" width="15" id="q4di"/><input type="radio" name="q4" value="d" id="q4d"><label for="q4d">The ideal op-amp model is applicable for any load resistance R<sub>L</sub> connected at the output terminals:
+so long as R<sub>L</sub> &#8810; R<sub>0</sub>, where R<sub>0</sub> is the output resistance of the op amp itself.
+</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q4a').checked = false;
+  document.getElementById('q4b').checked = false;
+  document.getElementById('q4c').checked = false;
+  document.getElementById('q4d').checked = false;
+answer_value[4] = "c";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="question5"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.5</span>
+    <span style="color:blue;">Voltage Follower</span></b></h2>
+A voltage follower circuit is called a <i>buffer</i> because it is
+inserted between an input circuit and an output load R<sub>L</sub> so
+as to:
+</p>
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q5ai"/><input type="radio" name="q5" value="a" id="q5a"><label for="q5a">Avoid saturation of the output voltage.</label><br>
+<img src="blank.png" width="15" id="q5bi"/><input type="radio" name="q5" value="b" id="q5b"><label for="q5b">Insulate the input circuit from the load R<sub>L</sub>.</label><br>
+<img src="blank.png" width="15" id="q5ci"/><input type="radio" name="q5" value="c" id="q5c"><label for="q5c">Realize extra voltage gain.</label><br>
+<img src="blank.png" width="15" id="q5di"/><input type="radio" name="q5" value="d" id="q5d"><label for="q5d">Reduce the output voltage.</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q5a').checked = false;
+  document.getElementById('q5b').checked = false;
+  document.getElementById('q5c').checked = false;
+  document.getElementById('q5d').checked = false;
+answer_value[5] = "b";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+<div class="question6"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.6</span>
+    <span style="color:blue;">Finite-Gain Op Amp</span></b></h2>
+An op amp with an open-loop gain of 10<sup>6</sup> and V<sub>cc</sub>=
+12 V has an inverting-input voltage &upsilon;<sub>n</sub> = 20 &mu;V
+and a noninverting input voltage of 5 &mu;V.  The output voltage is (select one):
+</p>
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q6ai"/><input type="radio" name="q6" value="a" id="q6a"><label for="q6a">15 Volts</label><br>
+<img src="blank.png" width="15" id="q6bi"/><input type="radio" name="q6" value="b" id="q6b"><label for="q6b">-15 Volts</label><br>
+<img src="blank.png" width="15" id="q6ci"/><input type="radio" name="q6" value="c" id="q6c"><label for="q6c">12 Volts</label><br>
+<img src="blank.png" width="15" id="q6di"/><input type="radio" name="q6" value="d" id="q6d"><label for="q6d">-12 Volts</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q6a').checked = false;
+  document.getElementById('q6b').checked = false;
+  document.getElementById('q6c').checked = false;
+  document.getElementById('q6d').checked = false;
+answer_value[6] = "d";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question7"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.7</span>
+    <span style="color:blue;">Finite-Gain Op Amp</span></b></h2>
+With its noninverting input voltage at 10 &mu;V, the output voltage of
+the op amp is -9V.  If A = 6x10<sup>5</sup> and V<sub>cc</sub> = 12V,
+what can we conclude about the inverting input voltage &upsilon;<sub>n</sub>?
+</p>
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q7ai"/><input type="radio" name="q7" value="a" id="q7a"><label for="q7a">&upsilon;<sub>n</sub> = 25 &mu;V</label><br>
+<img src="blank.png" width="15" id="q7bi"/><input type="radio" name="q7" value="b" id="q7b"><label for="q7b">&upsilon;<sub>n</sub> = 0</label><br>
+<img src="blank.png" width="15" id="q7ci"/><input type="radio" name="q7" value="c" id="q7c"><label for="q7c">&upsilon;<sub>n</sub> = 22 &mu;V</label><br>
+<img src="blank.png" width="15" id="q7di"/><input type="radio" name="q7" value="d" id="q7d"><label for="q7d">&upsilon;<sub>n</sub> = -22 &mu;V</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q7a').checked = false;
+  document.getElementById('q7b').checked = false;
+  document.getElementById('q7c').checked = false;
+  document.getElementById('q7d').checked = false;
+answer_value[7] = "a";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question8"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.8</span>
+    <span style="color:blue;">Ideal Op Amp</span></b></h2>
+Use the ideal op-amp model to determine &upsilon;<sub>o</sub>,
+given that &upsilon;<sub>s</sub> = 0.1 V.
+
+</p>
+<img src="figs/4.8.jpg" width="265">
+
+<ul class="answers">
+&upsilon;<sub>0</sub> =
+<input type="text" name="q8" value=""
+       id="q8"><label for="q8">Volts </label> <button id="q8btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q8").value = "";
+answer_value[8] = -10;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="question9"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.9</span>
+    <span style="color:blue;">Ideal Op Amp</span></b></h2>
+Use the ideal op-amp model to determine &upsilon;<sub>0</sub>, given
+that &upsilon;<sub>s</sub> = 0.2 V.
+
+</p>
+<img src="figs/4.9.jpg" width="265">
+
+<ul class="answers">
+&upsilon;<sub>0</sub> =
+<input type="text" name="q9" value=""
+       id="q9"><label for="q9">Volts </label> <button id="q9btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q9").value = "";
+answer_value[9] = -15;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="question10"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.10</span>
+    <span style="color:blue;">Current Gain</span></b></h2>
+Use the ideal op-amp model to determine the current gain G<sub>i</sub> = i<sub>L</sub>/i<sub>s</sub>, given that
+V<sub>cc</sub> = 10 V,
+R<sub>s</sub> = 1 k&Omega;,
+R<sub>f</sub> = 10 k&Omega;, and
+R<sub>L</sub> = 20 k&Omega;,.
+
+</p>
+<img src="figs/4.10.jpg" width="258">
+
+<ul class="answers">
+G<sub>i</sub> =
+<input type="text" name="q10" value=""
+       id="q10"><label for="q10"> </label> <button id="q10btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q10").value = "";
+answer_value[10] = -0.5;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question11"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.11</span>
+    <span style="color:blue;">Op-Amp Circuit</span></b></h2>
+Use the ideal op-amp model to determine &upsilon;<sub>0</sub>, given that V<sub>cc</sub> = 12 V.
+
+</p>
+<img src="figs/4.11.jpg" width="178">
+
+<ul class="answers">
+&upsilon;<sub>0</sub> =
+<input type="text" name="q11" value=""
+       id="q11"><label for="q11"> </label> <button id="q11btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q11").value = "";
+answer_value[11] = 9;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="question12"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.12</span>
+    <span style="color:blue;">Op-Amp Circuit</span></b></h2>
+Apply the ideal op-amp model to determine &upsilon;<sub>0</sub>, given that &upsilon;<sub>s</sub> = 0.5 V.
+
+</p>
+<img src="figs/4.12.jpg" width="303">
+
+<ul class="answers">
+&upsilon;<sub>0</sub> =
+<input type="text" name="q12" value=""
+       id="q12"><label for="q12"> </label> <button id="q12btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q12").value = "";
+answer_value[12] = -6;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="question13"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.13</span>
+    <span style="color:blue;">Op-Amp Circuit</span></b></h2>
+Apply the ideal op-amp model to determine &upsilon;<sub>0</sub>, given that &upsilon;<sub>s</sub> = 2 V.
+
+</p>
+<img src="figs/4.13.jpg" width="303">
+
+<ul class="answers">
+&upsilon;<sub>0</sub> =
+<input type="text" name="q13" value=""
+       id="q13"><label for="q13"> </label> <button id="q13btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q13").value = "";
+answer_value[13] = -12;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+<div class="question14"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.14</span>
+    <span style="color:blue;">Op-Amp Circuit</span></b></h2>
+Apply the ideal op-amp model to determine G = &upsilon;<sub>0</sub>/&upsilon;<sub>s</sub>.
+
+</p>
+<img src="figs/4.14.jpg" width="225">
+
+<ul class="answers">
+G =
+<input type="text" name="q14" value=""
+       id="q14"><label for="q14"> </label> <button id="q14btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q14").value = "";
+answer_value[14] = 0;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question15"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.15</span>
+    <span style="color:blue;">Circuit with Switches</span></b></h2>
+The circuit contains two single-pole single-throw switches. Use the
+ideal op-amp model to determine the gain G =
+&upsilon;<sub>0</sub>/&upsilon;<sub>s</sub> for s<sub>1</sub> closed
+and s<sub>2</sub> open.
+
+</p>
+<img src="figs/4.15.jpg" width="311">
+
+<ul class="answers">
+G =
+<input type="text" name="q15" value=""
+       id="q15"><label for="q15"> </label> <button id="q15btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q15").value = "";
+answer_value[15] = -12;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+<div class="question16"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.16</span>
+    <span style="color:blue;">Circuit with Switches</span></b></h2>
+The circuit contains two single-pole single-throw switches. Use the
+ideal op-amp model to determine the gain G =
+&upsilon;<sub>0</sub>/&upsilon;<sub>s</sub> for both s<sub>1</sub>
+and s<sub>2</sub> closed.
+
+</p>
+<img src="figs/4.16.jpg" width="311">
+
+<ul class="answers">
+G =
+<input type="text" name="q16" value=""
+       id="q16"><label for="q16"> </label> <button id="q16btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q16").value = "";
+answer_value[16] = -16;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question17"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.17</span>
+    <span style="color:blue;">Circuit with Switches</span></b></h2>
+The circuit contains two single-pole single-throw switches. Use the
+ideal op-amp model to determine the gain G =
+&upsilon;<sub>0</sub>/&upsilon;<sub>s</sub> for both s<sub>1</sub> and
+s<sub>2</sub> open.
+
+</p>
+<img src="figs/4.17.jpg" width="311">
+
+<ul class="answers">
+G =
+<input type="text" name="q17" value=""
+       id="q17"><label for="q17"> </label> <button id="q17btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q17").value = "";
+answer_value[17] = -8;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="question18"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.18</span>
+    <span style="color:blue;">Circuit with Switches</span></b></h2>
+The circuit contains two single-pole single-throw switches. Use the
+ideal op-amp model to determine the gain G =
+&upsilon;<sub>0</sub>/&upsilon;<sub>s</sub> for s<sub>1</sub> open and
+s<sub>2</sub> closed.
+
+</p>
+<img src="figs/4.18.jpg" width="311">
+
+<ul class="answers">
+G =
+<input type="text" name="q18" value=""
+       id="q18"><label for="q18"> </label> <button id="q18btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q18").value = "";
+answer_value[18] = -16;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question19"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.19</span>
+    <span style="color:blue;">Op-Amp Circuit</span></b></h2>
+
+Apply the ideal op-amp model to find &upsilon;<sub>0</sub>.
+
+</p>
+<img src="figs/4.19.jpg" width="315">
+
+<ul class="answers">
+&upsilon;<sub>0</sub> =
+<input type="text" name="q19" value=""
+       id="q19"><label for="q19"> </label>Volts <button id="q19btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q19").value = "";
+answer_value[19] = 8;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="question20"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.20</span>
+    <span style="color:blue;">Op-Amp Circuit</span></b></h2>
+
+Apply the ideal op-amp model to find &upsilon;<sub>0</sub>.
+
+</p>
+<img src="figs/4.20.jpg" width="315">
+
+<ul class="answers">
+&upsilon;<sub>0</sub> =
+<input type="text" name="q20" value=""
+       id="q20"><label for="q20"> </label>Volts <button id="q20btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q20").value = "";
+answer_value[20] = 11;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="question21"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.21</span>
+    <span style="color:blue;">Op-Amp Circuit</span></b></h2>
+
+Use the ideal op-amp model to determine &upsilon;<sub>0</sub>.
+
+</p>
+<img src="figs/4.22.jpg" width="315">
+
+<ul class="answers">
+&upsilon;<sub>0</sub> =
+<input type="text" name="q21" value=""
+       id="q21"><label for="q21"> </label>V <button id="q21btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q21").value = "";
+answer_value[21] = 8;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="question22"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.22</span>
+    <span style="color:blue;">Op-Amp Circuit</span></b></h2>
+
+Use the ideal op-amp model to determine &upsilon;<sub>0</sub>.
+
+</p>
+<img src="figs/4.23.jpg" width="315">
+
+<ul class="answers">
+&upsilon;<sub>0</sub> =
+<input type="text" name="q22" value=""
+       id="q22"><label for="q22"> </label>V <button id="q22btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q22").value = "";
+answer_value[22] = 2;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="question23"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.23</span>
+    <span style="color:blue;">Op-Amp Circuit</span></b></h2>
+
+Use the ideal op-amp model to determine &upsilon;<sub>0</sub>.
+
+</p>
+<img src="figs/4.24.jpg" width="315">
+
+<ul class="answers">
+&upsilon;<sub>0</sub> =
+<input type="text" name="q23" value=""
+       id="q23"><label for="q23"> </label>V <button id="q23btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q23").value = "";
+answer_value[23] = -16;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="question24"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.24</span>
+    <span style="color:blue;">Op-Amp Circuit</span></b></h2>
+
+Use the ideal op-amp model to determine &upsilon;<sub>0</sub>.
+
+</p>
+<img src="figs/4.25.jpg" width="315">
+
+<ul class="answers">
+&upsilon;<sub>0</sub> =
+<input type="text" name="q24" value=""
+       id="q24"><label for="q24"> </label>V <button id="q24btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q24").value = "";
+answer_value[24] = -14;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="question25"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 4.25</span>
+    <span style="color:blue;">Op-Amp Circuit</span></b></h2>
+
+Apply the op-amp model to determine the magnitude of
+&upsilon;<sub>s</sub> at which &upsilon;<sub>0</sub> reaches
+saturation.  Assume &upsilon;<sub>s</sub> is negative.
+
+</p>
+<img src="figs/4.26.jpg" width="315">
+
+<ul class="answers">
+|&upsilon;<sub>s</sub>| =
+<input type="text" name="q25" value=""
+       id="q25"><label for="q25"> </label>V <button id="q25btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q25").value = "";
+answer_value[25] = 6;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    var i;
+    var count=0;
+    var scores = [];
+    var nclicks = [];
+    var nquestions = 25;
+    var askForSolutionWhenIncorrect = [];
+
+    for (i = 1; i < nquestions+1; i++) {
+        scores[i] = 0;
+        nclicks[i]=0;
+        askForSolutionWhenIncorrect[i] = false;
+    }// endfor
+
+$(function(){
+
+ var i;
+ var count=0;
+  //var debug=1;// true
+  var debug=0;// false
+  if( debug == 1) {
+    for (i=1; i<nquestions+1;i++){
+       count++;
+       $(".question"+(i)).css("display", "block");
+       $(".score"+(i)).css("display", "table-row");
+    } //endfor
+  }//endif
+
+ // display a random selection of 5 questions
+ var thresh=6./(nquestions-1.);
+ while (debug==0 && count < 5) {
+   for (i = 1; i < nquestions+1; i++) {
+     if(Math.random() <thresh && count<5) {
+       count++;
+       $(".question"+(i)).css("display", "block");
+       $(".score"+(i)).css("display", "table-row");
+     }
+   }//endfor
+   if(count<5){
+      count=0;
+      for (i = 1; i < nquestions+1; i++) {
+       $(".question"+(i)).css("display", "none");
+       $(".score"+(i)).css("display", "none");
+      }
+   }
+ }//end while
+
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+</style>
+
+
+<!-- Trigger/Open The Modal -->
+<!-- <button id="myBtn">Open Modal</button> -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="width: 25%;">
+    <div id="mheader" class="modal-header">
+      <span class="close">&times;</span>
+      <div id="the_header"></div>
+    </div>
+    <div id="the_message" class="modal-body">
+    </div>
+    <div id="mfooter" class="modal-footer">
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+//var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+//btn.onclick = function() {
+//    modal.style.display = "block";
+    //}
+
+      // just some junk to init it:
+      var refocus_name = "answer_dialog";
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+      modal.style.display = "none";
+      //alert("refocus="+refocus_name);
+      document.getElementById(refocus_name).focus();
+
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      //alert("refocus="+refocus_name);
+      document.getElementById(refocus_name).focus();
+    }
+}
+</script>
+
+
+<script>
+
+$(document).ready(function()
+{
+
+
+    var header_wrong = "<h3>Incorrect</h3>";
+    var answer_wrong="I'm sorry, that is incorrect";
+    var header_correct="<h3>Correct</h3>";
+    var answer_correct="YES!, that is correct!";
+
+    var color_correct="#5cb85c";
+    var color_wrong = "#FF3343";
+
+    var answer_error = 0.01;
+
+
+
+    $("#redo").click(function() {
+            location.reload();
+    });
+    $("#newchapter").click(function() {
+            location.replace("chapters.html");
+    });
+
+
+
+
+// for each short answer need to have 2 functions:
+// a "click" and a "keypress":
+// multiple choice just needs "click"
+
+
+
+
+    $("#q1a").click(function() {
+            multiple_choice(1,"a");
+    });
+    $("#q1b").click(function() {
+            multiple_choice(1,"b");
+    });
+    $("#q1c").click(function() {
+            multiple_choice(1,"c");
+    });
+    $("#q1d").click(function() {
+            multiple_choice(1,"d");
+    });
+
+
+    $("#q2a").click(function() {
+            multiple_choice(2,"a");
+    });
+    $("#q2b").click(function() {
+            multiple_choice(2,"b");
+    });
+    $("#q2c").click(function() {
+            multiple_choice(2,"c");
+    });
+    $("#q2d").click(function() {
+            multiple_choice(2,"d");
+    });
+
+
+    $("#q3a").click(function() {
+            multiple_choice(3,"a");
+    });
+    $("#q3b").click(function() {
+            multiple_choice(3,"b");
+    });
+    $("#q3c").click(function() {
+            multiple_choice(3,"c");
+    });
+    $("#q3d").click(function() {
+            multiple_choice(3,"d");
+    });
+
+
+    $("#q4a").click(function() {
+            multiple_choice(4,"a");
+    });
+    $("#q4b").click(function() {
+            multiple_choice(4,"b");
+    });
+    $("#q4c").click(function() {
+            multiple_choice(4,"c");
+    });
+    $("#q4d").click(function() {
+            multiple_choice(4,"d");
+    });
+
+
+    $("#q5a").click(function() {
+            multiple_choice(5,"a");
+    });
+    $("#q5b").click(function() {
+            multiple_choice(5,"b");
+    });
+    $("#q5c").click(function() {
+            multiple_choice(5,"c");
+    });
+    $("#q5d").click(function() {
+            multiple_choice(5,"d");
+    });
+
+
+
+    $("#q6a").click(function() {
+            multiple_choice(6,"a");
+    });
+    $("#q6b").click(function() {
+            multiple_choice(6,"b");
+    });
+    $("#q6c").click(function() {
+            multiple_choice(6,"c");
+    });
+    $("#q6d").click(function() {
+            multiple_choice(6,"d");
+    });
+
+
+
+    $("#q7a").click(function() {
+            multiple_choice(7,"a");
+    });
+    $("#q7b").click(function() {
+            multiple_choice(7,"b");
+    });
+    $("#q7c").click(function() {
+            multiple_choice(7,"c");
+    });
+    $("#q7d").click(function() {
+            multiple_choice(7,"d");
+    });
+
+
+    $("#q8btn").click(function() {
+            short_answer(8);
+    });
+
+    $("#q9btn").click(function() {
+            short_answer(9);
+    });
+
+    $("#q10btn").click(function() {
+            short_answer(10);
+    });
+
+    $("#q11btn").click(function() {
+            short_answer(11);
+    });
+
+    $("#q12btn").click(function() {
+            short_answer(12);
+    });
+
+    $("#q13btn").click(function() {
+            short_answer(13);
+    });
+
+    $("#q14btn").click(function() {
+            short_answer(14);
+    });
+
+    $("#q15btn").click(function() {
+            short_answer(15);
+    });
+
+    $("#q16btn").click(function() {
+            short_answer(16);
+    });
+
+    $("#q17btn").click(function() {
+            short_answer(17);
+    });
+
+    $("#q18btn").click(function() {
+            short_answer(18);
+    });
+
+    $("#q19btn").click(function() {
+            short_answer(19);
+    });
+
+    $("#q20btn").click(function() {
+            short_answer(20);
+    });
+
+    $("#q21btn").click(function() {
+            short_answer(21);
+    });
+
+    $("#q22btn").click(function() {
+            short_answer(22);
+    });
+
+    $("#q23btn").click(function() {
+            short_answer(23);
+    });
+
+    $("#q24btn").click(function() {
+            short_answer(24);
+    });
+
+    $("#q25btn").click(function() {
+            short_answer(25);
+    });
+
+
+
+
+    $("#q8").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(8);
+	}
+    });
+
+    $("#q9").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(9);
+	}
+    });
+
+    $("#q10").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(10);
+	}
+    });
+
+    $("#q11").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(11);
+	}
+    });
+
+    $("#q12").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(12);
+	}
+    });
+
+    $("#q13").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(13);
+	}
+    });
+
+    $("#q14").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(14);
+	}
+    });
+
+    $("#q15").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(15);
+	}
+    });
+
+    $("#q16").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(16);
+	}
+    });
+
+    $("#q17").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(17);
+	}
+    });
+
+    $("#q18").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(18);
+	}
+    });
+
+    $("#q19").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(19);
+	}
+    });
+
+    $("#q20").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(20);
+	}
+    });
+
+    $("#q21").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(21);
+	}
+    });
+
+    $("#q22").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(22);
+	}
+    });
+
+    $("#q23").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(23);
+	}
+    });
+
+    $("#q24").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(24);
+	}
+    });
+
+    $("#q25").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(25);
+	}
+    });
+
+
+
+
+
+
+function replace_with_answer(qnum)
+{
+   document.getElementById('the_header').innerHTML="";
+document.getElementById('the_message').innerHTML="<div style=\"position:relative; left: -125px; top: -10px;overflow-y:auto;width:200%;max-height:600px;\"><img src=\"answers/4."+qnum.toString()+".PNG\" width=\"100%\"></div>";
+   //document.getElementById('the_message').innerHTML="<img src=\"answers/4."+qnum.toString()+".PNG\" width=\"200%\" style=\"position:relative; left: -125px; top: -10px;\">";
+}
+
+
+
+
+function short_answer(qnum)
+{
+    var qstr = "q"+qnum.toString();
+    var guess = document.getElementById(qstr).value;
+    var metric;
+    if(Math.abs(answer_value[qnum])<0.01) {
+       metric = Math.abs(guess); // deal with answers that are ==0
+    } else {
+       metric = Math.abs(guess-answer_value[qnum])/Math.abs(answer_value[qnum]);
+    }
+    if( metric < answer_error) {
+        document.getElementById('the_header').innerHTML=header_correct;
+        document.getElementById('the_message').innerHTML=answer_correct + "<br><button id=\"showanswer\">click here for solution</button>";
+        document.getElementById('mheader').style.backgroundColor=color_correct;
+        document.getElementById('mfooter').style.backgroundColor=color_correct;
+	document.getElementById('myModal').style.display = "block";
+        nclicks[qnum]++;
+        if( nclicks[qnum] <3  && scores[qnum]==0 && askForSolutionWhenIncorrect[qnum] === false) {
+            scores[qnum] = 20./nclicks[qnum];
+        }
+        document.getElementById('showanswer').onclick=function(){replace_with_answer(qnum);};
+    } else {
+        document.getElementById('the_header').innerHTML=header_wrong;
+        document.getElementById('the_message').innerHTML=answer_wrong + "<br><button id=\"showanswer\">click here for solution</button>";
+        document.getElementById('mheader').style.backgroundColor=color_wrong;
+        document.getElementById('mfooter').style.backgroundColor=color_wrong;
+	document.getElementById('myModal').style.display = "block";
+        document.getElementById(qstr).value = "";
+        refocus_name = qstr;
+        nclicks[qnum]++;
+
+      document.getElementById('showanswer').onclick=function(){
+        if(nclicks[qnum] <2){
+          if(confirm("Showing this solution will result in 0 points. Are you sure?")){
+            replace_with_answer(qnum);
+            //student gets automatic 0
+            scores[qnum] = 0
+            askForSolutionWhenIncorrect[qnum] = true;
+            update_score(qnum)
+          }
+        } else {
+          replace_with_answer(qnum);
+          //student gets automatic 0
+          scores[qnum] = 0
+          askForSolutionWhenIncorrect[qnum] = true;
+          update_score(qnum)
+        }
+      };
+    }
+    update_score(qnum);
+}// end func: short_answer()
+
+
+
+function multiple_choice(qnum,which)
+{
+    var qstr="q"+qnum.toString()+which+"i";
+    refocus_name = qstr;
+    if (which == answer_value[qnum]) {
+	document.getElementById('the_header').innerHTML=header_correct;
+	document.getElementById('the_message').innerHTML=answer_correct + "<br><button id=\"showanswer\">click here for solution</button>";
+	document.getElementById('mheader').style.backgroundColor=color_correct;
+	document.getElementById('mfooter').style.backgroundColor=color_correct;
+	document.getElementById('myModal').style.display = "block";
+	document.getElementById(qstr).src="correct.png";
+        nclicks[qnum]++;
+        if( nclicks[qnum] <3 && askForSolutionWhenIncorrect[qnum] === false) {
+            scores[qnum] = 20./nclicks[qnum];
+        }
+        update_score(qnum);
+        document.getElementById('showanswer').onclick=function(){replace_with_answer(qnum);};
+    } else {
+	document.getElementById('the_header').innerHTML=header_wrong;
+	document.getElementById('the_message').innerHTML=answer_wrong + "<br><button id=\"showanswer\">click here for solution</button>";
+	document.getElementById('mheader').style.backgroundColor=color_wrong;
+	document.getElementById('mfooter').style.backgroundColor=color_wrong;
+	document.getElementById('myModal').style.display = "block";
+	document.getElementById(qstr).src="wrong.png";
+        nclicks[qnum]++;
+
+      document.getElementById('showanswer').onclick=function(){
+        if(nclicks[qnum] <2){
+          if(confirm("Showing this solution will result in 0 points. Are you sure?")){
+            replace_with_answer(qnum);
+            //student gets automatic 0
+            scores[qnum] = 0
+            askForSolutionWhenIncorrect[qnum] = true;
+            update_score(qnum)
+          }
+        } else {
+          replace_with_answer(qnum);
+          //student gets automatic 0
+          scores[qnum] = 0
+          askForSolutionWhenIncorrect[qnum] = true;
+          update_score(qnum)
+        }
+      };
+    }
+
+}
+
+
+
+
+function update_score(qnum)
+{
+    var total_score=0;
+    var total_possible = 100; //count*20;
+
+    for (i = 1; i < nquestions+1; i++) {
+        total_score += scores[i];
+    }// endfor
+
+    document.getElementById('score_total').innerHTML="<td>Total</td><td>"+total_score.toString()+" / "+total_possible.toString()+"</td>";
+
+    var qstr = "score"+qnum.toString()+"v";
+    if( scores[qnum] > 0) {
+    document.getElementById(qstr).innerHTML=scores[qnum].toString()+" /  &nbsp;&nbsp;20";
+    }
+}
+
+
+});
+</script>
+
+
+
+
+<br>
+<button id="redo">Redo this Chapter</button>
+<br>
+<button id="newchapter">Select Another Chapter</button>
+  </body>
+  </html>

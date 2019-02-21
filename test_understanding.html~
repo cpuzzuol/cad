@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"
+      /><title>Circuit Analysis and Design by Ulaby, Maharbiz, Furse</title>
+
+<link href="../style.css" rel="stylesheet" type="text/css" media="screen" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43220622-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="header"> </div>
+<div id="content">
+<div id="right">
+<div>
+<h2>Test Your Understanding</h2>
+<p>
+<p>
+For each chapter, we have developed a <span style="color:red;">test</span> to help you evaluate your
+understanding of the basic concepts and techniques covered in that
+chapter.
+</p>
+
+<p>
+Each chapter test is composed of <span style="color:red;">five questions</span>, selected randomly
+from a large set of questions associated with that chapter. Hence the
+test <span style="color:red;">may be retaken multiple times</span>.
+</p>
+
+<p>
+<span style="color:red;">Your Score:</span> For each question, if you answer it correctly on your
+first attempt, you receive 20 points. A correct answer on the second
+attempt yields 10 points, and no points are realized after the second attempt.
+<br>
+<br>
+
+<a href="chapter1.html">Chapter 1</a><br>
+<a href="chapter2.html">Chapter 2</a><br>
+<a href="chapter3.html">Chapter 3</a><br>
+<a href="chapter4.html">Chapter 4</a><br>
+<a href="chapter5.html">Chapter 5</a><br>
+<a href="chapter6.html">Chapter 6</a><br>
+<a href="chapter7.html">Chapter 7</a><br>
+<a href="chapter8.html">Chapter 8</a><br>
+<a href="chapter9.html">Chapter 9</a><br>
+<a href="chapter10.html">Chapter 10</a><br>
+<a href="chapter11.html">Chapter 11</a><br>
+<a href="chapter12.html">Chapter 12</a><br>
+<a href="chapter13.html">Chapter 13</a><br>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="left">
+<h2><span style="font-weight: bold;">Getting Started</span></h2>
+<ul>
+<li style="color: rgb(76, 76, 76);"><a href="http://cad.eecs.umich.edu/ftuc_flyer.pdf"><span style="font-weight: bold;">Free Textbook Initiative</span></a></li>
+<li style="color: rgb(76, 76, 76);"><a href="http://cad.eecs.umich.edu/start_here.php"><span style="font-weight: bold;">Welcome</span></a></li>
+<!--
+<li><a href="ulaby_getting_started.html"><span style="font-weight: bold;">Using this CD</span></a></li>
+<li><a href="ulaby_terms.html"><span style="font-weight: bold;">Terms</span></a></li>
+-->
+<li><a href="http://cad.eecs.umich.edu/ulaby_feedback.php"><span style="font-weight: bold;">Feedback</span></a></li>
+</ul>
+<h2><br />
+<span style="font-weight: bold;"></span></h2>
+<h2><span style="font-weight: bold;">Student Resources</span></h2>
+<ul>
+<li><a target="_blank"
+       href="http://cad.eecs.umich.edu/ulaby_concept_questions_solutions.php"><span style="font-weight: bold;">Answers to Concept Questions</span></a></li>
+<li><a target="_blank" href="http://cad.eecs.umich.edu/ulaby_exercise_solutions.php"><span style="font-weight: bold;">Exercise Solutions</span></a></li>
+<li><a href="http://cad.eecs.umich.edu/ulaby_multisim_tutorials.php"><span style="font-weight: bold;">Demos<br />
+(by Joe Steinmeier)</span></a></li>
+<li><a href="http://cad.eecs.umich.edu/ulaby_mydaq_tutorials.php"><span style="font-weight: bold;">MyDAQ<sup>TM</sup> Tutorials<br />
+(by Ed Doering)</span></a></li>
+<!--<li><a href="ulaby_mydaq_solutions.html"><span style="font-weight: bold;">MyDAQ<sup>TM</sup> Solutions<br />
+(by Ed Doering)</span></a></li>
+-->
+<!--<li>
+<a style="font-weight: bold;" href="http://ntspress.com/publications/circuits-third-edition/">Download LabVIEW<sup>TM</sup>
+Software<br /> with MathScript</a></li>
+-->
+<li><a href="http://cad.eecs.umich.edu/ulaby_techbriefs.php"><span style="font-weight: bold;">Technology Briefs</span></a></li>
+<li><a href="http://cad.eecs.umich.edu/all_qs/test_understanding.html"><span style="font-weight: bold;">Test Your Understanding</span></a></li>
+<li><a href="http://cad.eecs.umich.edu/berkeley_videos.html"><span style="font-weight: bold;">Univ. of California Video Course</span></a></li>
+<li><a target="_blank" href="https://utah.instructure.com/courses/473597"><span style="font-weight: bold;">Univ. of Utah Video Course</span></a></li>
+
+<!--
+<li><a href="http://cad.eecs.umich.edu/errata.php"><span style="font-weight: bold;">Errata</span></a></li>
+-->
+</ul>
+<span style="font-weight: bold;"><br />
+</span>
+<h2><span style="font-weight: bold;">Instructor Resources</span></h2>
+<ul>
+<!--
+<li><a target="_blank" href="pdf/ulaby_equations.pdf"><span style="font-weight: bold;">Book Equations</span></a></li>
+-->
+<li><a  style="font-weight: bold;" href="">Powerpoint Slides and Solution Manual: send request to ulaby@umich.edu</a></li>
+</ul>
+<span style="font-weight: bold;"></span><br />
+<h2>Authors</h2>
+<p style="height: 250px;">
+<strong><a href="http://cad.eecs.umich.edu/123hide456/bios.html" target="_blank">Fawwaz Ulaby</a></strong><br />
+University of Michigan<br />
+<strong><a href="http://cad.eecs.umich.edu/123hide456/bios.html" target="_blank">Michel Maharbiz</a></strong><br />
+University of California, Berkeley<br />
+<strong><a href="http://cad.eecs.umich.edu/123hide456/bios.html" target="_blank">Cynthia Furse</a></strong><br />
+University of Utah<br />
+
+<br />
+<b>Language:</b> English <br />
+<b>ISBN:</b> <br>
+978-1-60785-483-8 (hardcopy)<br />
+978-1-60785-484-5 (electronic)<br />
+</p>
+<br/>
+<br/>
+</div>
+</div>
+<div id="footer">
+<b>Content developed by Fawwaz Ulaby, Michel Maharbiz, and Cynthia Furse with assistance from Leland Pierce
+</b></p>
+<p class="copyright" style="font-size: 8px;">LabVIEW<sup>TM</sup>
+and Multisim<sup>TM</sup>
+are trademarks of National Instruments. Other products and companies are trademarks of their respective owners.</p>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,30 @@
+Chapter 4
+
+Problem 4.22
+Op-Amp Circuit
+<p>Use the ideal op-amp model to determine &upsilon;<sub>0</sub>.</p>
+Answer: 8 V
+
+Problem 4.23
+Op-Amp Circuit
+<p>Use the ideal op-amp model to determine &upsilon;<sub>0</sub>.</p>
+Answer: 2 V
+
+Problem 4.24
+Op-Amp Circuit
+<p>Use the ideal op-amp model to determine &upsilon;<sub>0</sub>.</p>
+Answer: 16 V
+
+Problem 4.25
+Op-Amp Circuit
+<p>Use the ideal op-amp model to determine &upsilon;<sub>0</sub>.</p>
+Answer: 14 V
+
+Problem 4.26
+Op-Amp Circuit
+<p>Apply the op-amp model to determine the magnitude of &upsilon;<sub>s</sub> at which &upsilon;<sub>0</sub> reaches saturation.  Assume &upsilon;<sub>s</sub> is negative.</p>
+Answer: 6 V
+
+
+
+

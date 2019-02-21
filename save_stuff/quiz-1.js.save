@@ -1,0 +1,196 @@
+
+$(document).ready(function() 
+{
+
+
+    var header_wrong = "<h3>Incorrect</h3>";
+    var answer_wrong="I'm sorry, that is incorrect";
+    var header_correct="<h3>Correct</h3>";
+    var answer_correct="YES!, that is correct!";
+
+    var color_correct="#5cb85c";
+    var color_wrong = "#FF3343";
+
+    var answer_error = 0.01;
+		  
+
+
+    $("#redo").click(function() {
+            location.reload();
+    });
+    $("#newchapter").click(function() {
+            location.replace("chapters.html");
+    });
+
+
+
+
+
+    $("#q10a").click(function() {
+            multiple_choice(10,"a");
+    });
+    $("#q10b").click(function() {
+            multiple_choice(10,"b");
+    });
+    $("#q10c").click(function() {
+            multiple_choice(10,"c");
+    });
+    $("#q10d").click(function() {
+            multiple_choice(10,"d");
+    });
+
+
+
+
+
+    $("#q1btn").click(function() {
+            short_answer(1);
+    });
+    $("#q2btn").click(function() {
+            short_answer(2);
+    });
+    $("#q3btn").click(function() {
+            short_answer(3);
+    });
+    $("#q4btn").click(function() {
+            short_answer(4);
+    });
+    $("#q5btn").click(function() {
+            short_answer(5);
+    });
+
+    
+
+    
+
+    $("#q12").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(12);  
+	}
+    });
+ 
+
+    $("#q1").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(1);  
+	}
+    });
+ 
+    $("#q2").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(2);  
+	}
+    });
+ 
+    $("#q3").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(3);  
+	}
+    });
+ 
+    $("#q4").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(4);  
+	}
+    });
+ 
+    $("#q5").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(5);  
+	}
+    });
+ 
+
+   
+function short_answer(qnum)
+{
+    var qstr = "q"+qnum.toString();
+    var guess = document.getElementById(qstr).value;
+    var metric = Math.abs(guess-answer_value[qnum])/Math.abs(answer_value[qnum]);
+    if( metric < answer_error) {
+        document.getElementById('the_header').innerHTML=header_correct;
+        document.getElementById('the_message').innerHTML=answer_correct;
+        document.getElementById('mheader').style.backgroundColor=color_correct;
+        document.getElementById('mfooter').style.backgroundColor=color_correct;
+	document.getElementById('myModal').style.display = "block";
+        nclicks[qnum]++;
+        if( nclicks[qnum] <3 && scores[qnum]==0) {
+            scores[qnum] = 20./nclicks[qnum];
+        }
+
+    } else {
+        document.getElementById('the_header').innerHTML=header_wrong;
+        document.getElementById('the_message').innerHTML=answer_wrong;
+        document.getElementById('mheader').style.backgroundColor=color_wrong;
+        document.getElementById('mfooter').style.backgroundColor=color_wrong;
+	document.getElementById('myModal').style.display = "block";
+        document.getElementById(qstr).value = "";
+        refocus_name = qstr;
+        nclicks[qnum]++;
+    }
+    update_score(qnum);
+}// end func: short_answer()
+
+
+
+function multiple_choice(qnum,which)
+{
+    var qstr="q"+qnum.toString()+which+"i";
+    if (which == answer_value[qnum]) {
+	document.getElementById('the_header').innerHTML=header_correct;
+	document.getElementById('the_message').innerHTML=answer_correct;
+	document.getElementById('mheader').style.backgroundColor=color_correct;
+	document.getElementById('mfooter').style.backgroundColor=color_correct;
+	document.getElementById('myModal').style.display = "block";
+	document.getElementById(qstr).src="correct.png";
+        nclicks[qnum]++;
+        if( nclicks[qnum] <3) {
+            scores[qnum] = 20./nclicks[qnum];
+        }
+        update_score(qnum);
+    } else {
+	document.getElementById('the_header').innerHTML=header_wrong;
+	document.getElementById('the_message').innerHTML=answer_wrong;
+	document.getElementById('mheader').style.backgroundColor=color_wrong;
+	document.getElementById('mfooter').style.backgroundColor=color_wrong;
+	document.getElementById('myModal').style.display = "block";
+	document.getElementById(qstr).src="wrong.png";
+        nclicks[qnum]++;
+    }
+
+}
+
+
+
+
+function update_score(qnum)
+{
+    var total_score=0;
+    var total_possible = count*20;
+ 
+    for (i = 1; i < 22; i++) {
+        total_score += scores[i];
+    }// endfor
+   
+    document.getElementById('score_total').innerHTML="<td>Total</td><td>"+total_score.toString()+" / "+total_possible.toString()+"</td>";
+
+    var qstr = "score"+qnum.toString()+"v";
+    if( scores[qnum] > 0) {
+    document.getElementById(qstr).innerHTML=scores[qnum].toString()+" /  &nbsp;&nbsp;20";
+    }
+}
+
+
+});

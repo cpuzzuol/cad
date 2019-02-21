@@ -1,0 +1,17 @@
+ch1:
+q11 (ulaby's q8): need the right answer.
+
+ch3:
+q9-q11 (ulaby's q3): need equations for the t/f answers. (Right now,
+just "BOX MATH" for all 3.
+
+q23  (ulaby's q3.6 last part): 
+ "none of above 3 statements is true", should be replaced with the
+ actual 3 statements(?)  or maybe just remove this question!
+likely remove....
+
+q48 & q49  (ulaby's q3.17)  NO DATA just shows question for 3.16!
+likely just delete q49
+
+============================
+summary: need answers/math for: 1.8 and 3.3

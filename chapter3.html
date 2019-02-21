@@ -1,0 +1,2072 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+    <script type="text/javascript">
+      var answer_value=[];
+    </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-43220622-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-43220622-5');
+</script>
+
+</head>
+<body>
+
+<div id="answer_dialog">
+</div>
+
+<div style="text-align: center;">
+<h1 style="color:blue;"><b>Test Your Understanding</b></h1>
+<h1 style="color:red;"><b>Chapter 3: Analysis Techniques</b></h1>
+</div>
+
+
+<style>
+#scoretable td, #customers th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+
+#scoretable th {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+
+<div id="scorediv">
+<div style="text-align: center;">
+<h2 style="color:blue;"><b>Test Score</b></h2>
+<table id="scoretable" style="margin: 0 auto; border-collapse:
+                              collapse;">
+<tr>
+<th>&nbsp;Question&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Score</th>
+</tr>
+<tr class="score1" id="score1" style="display:none;">
+<td>3.1</td><td id="score1v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score2" id="score2" style="display:none;">
+<td>3.2</td><td id="score2v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score3" id="score3" style="display:none;">
+<td>3.3</td><td id="score3v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score4" id="score4" style="display:none;">
+<td>3.4</td><td id="score4v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score5" id="score5" style="display:none;">
+<td>3.5</td><td id="score5v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score6" id="score6" style="display:none;">
+<td>3.6</td><td id="score6v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score7" id="score7" style="display:none;">
+<td>3.7</td><td id="score7v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score8" id="score8" style="display:none;">
+<td>3.8</td><td id="score8v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score9" id="score9" style="display:none;">
+<td>3.9</td><td id="score9v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score10" id="score10" style="display:none;">
+<td>3.10</td><td id="score10v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score11" id="score11" style="display:none;">
+<td>3.11</td><td id="score11v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score12" id="score12" style="display:none;">
+<td>3.12</td><td id="score12v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score13" id="score13" style="display:none;">
+<td>3.13</td><td id="score13v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score14" id="score14" style="display:none;">
+<td>3.14</td><td id="score14v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score15" id="score15" style="display:none;">
+<td>3.15</td><td id="score15v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score16" id="score16" style="display:none;">
+<td>3.16</td><td id="score16v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score17" id="score17" style="display:none;">
+<td>3.17</td><td id="score17v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score18" id="score18" style="display:none;">
+<td>3.18</td><td id="score18v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score19" id="score19" style="display:none;">
+<td>3.19</td><td id="score19v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score20" id="score20" style="display:none;">
+<td>3.20</td><td id="score20v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score21" id="score21" style="display:none;">
+<td>3.21</td><td id="score21v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score22" id="score22" style="display:none;">
+<td>3.22</td><td id="score22v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score23" id="score23" style="display:none;">
+<td>3.23</td><td id="score23v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score24" id="score24" style="display:none;">
+<td>3.24</td><td id="score24v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score25" id="score25" style="display:none;">
+<td>3.25</td><td id="score25v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score26" id="score26" style="display:none;">
+<td>3.26</td><td id="score26v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score27" id="score27" style="display:none;">
+<td>3.27</td><td id="score27v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score28" id="score28" style="display:none;">
+<td>3.28</td><td id="score28v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score29" id="score29" style="display:none;">
+<td>3.29</td><td id="score29v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score30" id="score30" style="display:none;">
+<td>3.30</td><td id="score30v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score31" id="score31" style="display:none;">
+<td>3.31</td><td id="score31v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score32" id="score32" style="display:none;">
+<td>3.32</td><td id="score32v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score33" id="score33" style="display:none;">
+<td>3.33</td><td id="score33v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score34" id="score34" style="display:none;">
+<td>3.34</td><td id="score34v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score35" id="score35" style="display:none;">
+<td>3.35</td><td id="score35v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score36" id="score36" style="display:none;">
+<td>3.36</td><td id="score36v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr class="score37" id="score37" style="display:none;">
+<td>3.37</td><td id="score37v">&nbsp;&nbsp;0 / &nbsp;&nbsp;20</td>
+</tr>
+<tr id="score_total" style="background-color: #f2f2f2;"><td>Total</td><td>&nbsp;&nbsp;0 / 100</td></tr>
+</table>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="question1"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.1</span>
+    <span style="color:blue;">Circuit Elements</span></b></h2>
+Linear circuit elements include Resistors and diodes:</p>
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q1ti"/><input type="radio" name="q1" value="t" id="q1t"><label for="q1t">true</label><br>
+<img src="blank.png" width="15" id="q1fi"/><input type="radio" name="q1" value="f" id="q1f"><label for="q1f">false</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q1t').checked = false;
+  document.getElementById('q1f').checked = false;
+answer_value[1] = "f";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question2"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.2</span>
+    <span style="color:blue;">Circuit Elements</span></b></h2>
+Linear circuit elements include Resistors, capacitors, and inductors:</p>
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q2ti"/><input type="radio" name="q2" value="t" id="q2t"><label for="q2t">true</label><br>
+<img src="blank.png" width="15" id="q2fi"/><input type="radio" name="q2" value="f" id="q2f"><label for="q2f">false</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q2t').checked = false;
+  document.getElementById('q2f').checked = false;
+answer_value[2] = "t";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="question3"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.3</span>
+    <span style="color:blue;">Circuit Elements</span></b></h2>
+An active element requires an external power source to operate.</p>
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q3ti"/><input type="radio" name="q3" value="t" id="q3t"><label for="q3t">true</label><br>
+<img src="blank.png" width="15" id="q3fi"/><input type="radio" name="q3" value="f" id="q3f"><label for="q3f">false</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q3t').checked = false;
+  document.getElementById('q3f').checked = false;
+answer_value[3] = "t";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question4"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.4</span>
+    <span style="color:blue;">Circuit Elements</span></b></h2>
+Linear circuit elements include Diodes and transistors:</p>
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q4ti"/><input type="radio" name="q4" value="t" id="q4t"><label for="q4t">true</label><br>
+<img src="blank.png" width="15" id="q4fi"/><input type="radio" name="q4" value="f" id="q4f"><label for="q4f">false</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q4t').checked = false;
+  document.getElementById('q4f').checked = false;
+answer_value[4] = "f";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="question5"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.5</span>
+    <span style="color:blue;">Circuit Elements</span></b></h2>
+A resistor is a passive element, but a capacitor is an active element.</p>
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q5ti"/><input type="radio" name="q5" value="t" id="q5t"><label for="q5t">true</label><br>
+<img src="blank.png" width="15" id="q5fi"/><input type="radio" name="q5" value="f" id="q5f"><label for="q5f">false</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q5t').checked = false;
+  document.getElementById('q5f').checked = false;
+answer_value[5] = "f";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+<div class="question6"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.6</span>
+    <span style="color:blue;">Circuit Elements</span></b></h2>
+A diode is a nonlinear passive element.</p>
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q6ti"/><input type="radio" name="q6" value="t" id="q6t"><label for="q6t">true</label><br>
+<img src="blank.png" width="15" id="q6fi"/><input type="radio" name="q6" value="f" id="q6f"><label for="q6f">false</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q6t').checked = false;
+  document.getElementById('q6f').checked = false;
+answer_value[6] = "t";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question7"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.7</span>
+    <span style="color:blue;">Circuit Elements</span></b></h2>
+A BJT is an active element.</p>
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q7ti"/><input type="radio" name="q7" value="t" id="q7t"><label for="q7t">true</label><br>
+<img src="blank.png" width="15" id="q7fi"/><input type="radio" name="q7" value="f" id="q7f"><label for="q7f">false</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q7t').checked = false;
+  document.getElementById('q7f').checked = false;
+answer_value[7] = "t";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="question8"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.8</span>
+    <span style="color:blue;">Thevenin Equivalent</span></b></h2>
+Find the Thevenin equivalent resistance at terminals (a,b).
+</p>
+<img src="figs/3.25.jpg" width="290">
+
+<ul class="answers">
+R<sub>Th</sub> =
+<input type="text" name="q8" value=""
+       id="q8"><label for="q8">&Omega; </label> <button id="q8btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q8").value = "";
+answer_value[8] = 4;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="question9"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.9</span>
+    <span style="color:blue;">KCL</span></b></h2>
+For the circuit shown, application of KCL at node V<sub>0</sub> gives
+(choose one answer):
+</p>
+<img src="figs/3.3.jpg" width="279">
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q9ai"/><input type="radio" name="q9" value="a" id="q9a"><label for="q9a">$\displaystyle\frac{V_0-V_1}{R_1}+\frac{V_0-V_2}{R_2}+\frac{V_0-V_3}{R_3}-I_0=0$</label><br>
+<br>
+<img src="blank.png" width="15" id="q9bi"/><input type="radio" name="q9" value="b" id="q9b"><label for="q9b">$\displaystyle\frac{V_0-V_1}{R_1}+\frac{V_0-V_2}{R_2}+\frac{V_0-V_3}{R_3}+I_0=0$</label><br>
+<br>
+<img src="blank.png" width="15" id="q9ci"/><input type="radio" name="q9" value="c" id="q9c"><label for="q9c">$\displaystyle\frac{V_1-V_0}{R_1}+\frac{V_2-V_0}{R_2}+\frac{V_3-V_0}{R_3}-I_0=0$</label><br>
+<br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q9a').checked = false;
+  document.getElementById('q9b').checked = false;
+  document.getElementById('q9c').checked = false;
+answer_value[9] = "a";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="question10"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.10</span>
+    <span style="color:blue;">Supernode</span></b></h2>
+Choose one answer:
+</p>
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q10ai"/><input type="radio" name="q10" value="a" id="q10a"><label for="q10a">A supernode consists of two extraordinary nodes with a resistor between them.</label><br>
+<img src="blank.png" width="15" id="q10bi"/><input type="radio" name="q10" value="b" id="q10b"><label for="q10b">A supernode consists of two extraordinary nodes with a voltage source between them.</label><br>
+<img src="blank.png" width="15" id="q10ci"/><input type="radio" name="q10" value="c" id="q10c"><label for="q10c">A supernode consists of two extraordinary nodes with a current source between them.</label><br>
+<img src="blank.png" width="15" id="q10di"/><input type="radio" name="q10" value="c" id="q10d"><label for="q10d">A supernode consists of two extraordinary nodes with a current source in series with a resistor between them.</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q10a').checked = false;
+  document.getElementById('q10b').checked = false;
+  document.getElementById('q10c').checked = false;
+  document.getElementById('q10d').checked = false;
+answer_value[10] = "b";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="question11"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.11</span>
+    <span style="color:blue;">Supermesh</span></b></h2>
+Choose one answer:
+</p>
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q11ai"/><input type="radio" name="q11" value="a" id="q11a"><label for="q11a">A supermesh is two adjoining meshes that share a current source.</label><br>
+<img src="blank.png" width="15" id="q11bi"/><input type="radio" name="q11" value="b" id="q11b"><label for="q11b">A supermesh is two adjoining meshes that share a voltage source.</label><br>
+<img src="blank.png" width="15" id="q11ci"/><input type="radio" name="q11" value="c" id="q11c"><label for="q11c">A supermesh is two adjoining meshes that share a resistor.</label><br>
+<img src="blank.png" width="15" id="q11di"/><input type="radio" name="q11" value="c" id="q11d"><label for="q11d">A supermesh is two adjoining meshes that share a voltage source in series with a resistor.</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q11a').checked = false;
+  document.getElementById('q11b').checked = false;
+  document.getElementById('q11c').checked = false;
+  document.getElementById('q11d').checked = false;
+answer_value[11] = "a";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="question12"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.12</span>
+    <span style="color:blue;">Source Superposition</span></b></h2>
+Choose one answer:
+</p>
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q12ai"/><input type="radio" name="q12" value="a" id="q12a"><label for="q12a">The source superposition method is applicable to circuits containing only independent sources.</label><br>
+<img src="blank.png" width="15" id="q12bi"/><input type="radio" name="q12" value="b" id="q12b"><label for="q12b">The source superposition method is applicable for computing voltage, current, and power.</label><br>
+<img src="blank.png" width="15" id="q12ci"/><input type="radio" name="q12" value="c" id="q12c"><label for="q12c">When applying the source superposition method to determine the circuit
+response due to a given source, all other voltage and current sources are replaced with short circuits.</label><br>
+<img src="blank.png" width="15" id="q12di"/><input type="radio" name="q12" value="c" id="q12d"><label for="q12d">None of the above 3 statements is true.</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q12a').checked = false;
+  document.getElementById('q12b').checked = false;
+  document.getElementById('q12c').checked = false;
+  document.getElementById('q12d').checked = false;
+answer_value[12] = "d";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="question13"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.13</span>
+    <span style="color:blue;">Maximum Current</span></b></h2>
+Choose one answer:
+</p>
+<img src="figs/3.7.jpg" width="269">
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q13ai"/><input type="radio" name="q13" value="a" id="q13a"><label for="q13a">In the circuit shown above, i<sub>L</sub> is maximum when R<sub>L</sub> = open circuit.</label><br>
+<img src="blank.png" width="15" id="q13bi"/><input type="radio" name="q13" value="b" id="q13b"><label for="q13b">In the circuit shown above, i<sub>L</sub> is maximum when R<sub>L</sub> = short circuit.</label><br>
+<img src="blank.png" width="15" id="q13ci"/><input type="radio" name="q13" value="c" id="q13c"><label for="q13c">In the circuit shown above, i<sub>L</sub> is maximum when R<sub>L</sub> = R<sub>s</sub>.</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q13a').checked = false;
+  document.getElementById('q13b').checked = false;
+  document.getElementById('q13c').checked = false;
+answer_value[13] = "b";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="question14"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.14</span>
+    <span style="color:blue;">Maximum Voltage</span></b></h2>
+Choose one answer:
+</p>
+<img src="figs/3.7.jpg" width="269">
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q14ai"/><input type="radio" name="q14" value="a" id="q14a"><label for="q14a">In the circuit shown above, v<sub>L</sub> is maximum when R<sub>L</sub> = open circuit.</label><br>
+<img src="blank.png" width="15" id="q14bi"/><input type="radio" name="q14" value="b" id="q14b"><label for="q14b">In the circuit shown above, v<sub>L</sub> is maximum when R<sub>L</sub> = short circuit.</label><br>
+<img src="blank.png" width="15" id="q14ci"/><input type="radio" name="q14" value="c" id="q14c"><label for="q14c">In the circuit shown above, v<sub>L</sub> is maximum when R<sub>L</sub> = R<sub>s</sub>.</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q14a').checked = false;
+  document.getElementById('q14b').checked = false;
+  document.getElementById('q14c').checked = false;
+answer_value[14] = "a";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="question15"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.15</span>
+    <span style="color:blue;">Maximum Power</span></b></h2>
+Choose one answer:
+</p>
+<img src="figs/3.7.jpg" width="269">
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q15ai"/><input type="radio" name="q15" value="a" id="q15a"><label for="q15a">In the circuit shown above, P<sub>L</sub> is maximum when R<sub>L</sub> = open circuit.</label><br>
+<img src="blank.png" width="15" id="q15bi"/><input type="radio" name="q15" value="b" id="q15b"><label for="q15b">In the circuit shown above, P<sub>L</sub> is maximum when R<sub>L</sub> = short circuit.</label><br>
+<img src="blank.png" width="15" id="q15ci"/><input type="radio" name="q15" value="c" id="q15c"><label for="q15c">In the circuit shown above, P<sub>L</sub> is maximum when R<sub>L</sub> = R<sub>s</sub>.</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q15a').checked = false;
+  document.getElementById('q15b').checked = false;
+  document.getElementById('q15c').checked = false;
+answer_value[15] = "c";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="question16"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.16</span>
+    <span style="color:blue;">OR Gate</span></b></h2>
+Which of the following input/output tables is true for an OR gate?
+</p>
+
+
+<style type="text/css">
+  input[type="radio"], input[type="radio"]+label img {
+    vertical-align: middle;
+  }
+  ul {
+  list-style-type: none;
+  }
+</style>
+
+
+<p>
+<ul>
+ <img src="blank.png" width="15" id="q16ai"/>
+    <input type="radio" name="q16" value="a" id="q16a" />
+    <label for="q16a"><img src="figs/3.8a.jpg" width="269"/></label>
+<br>
+<img src="blank.png" width="15" id="q16bi"/>
+    <input type="radio" name="q16" value="b" id="q16b"/>
+    <label for="q16b"><img src="figs/3.8b.jpg" width="269"/></label>
+<br>
+<img src="blank.png" width="15" id="q16ci"/>
+    <input type="radio" name="q16" value="c" id="q16c"/>
+    <label for="q16c"><img src="figs/3.8c.jpg" width="269"/></label>
+<br>
+</ul>
+</p>
+
+
+<script>
+  document.getElementById('q16a').checked = false;
+  document.getElementById('q16b').checked = false;
+  document.getElementById('q16c').checked = false;
+answer_value[16] = "a";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question17"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.17</span>
+    <span style="color:blue;">Digital Inverter</span></b></h2>
+When a BJT is used in a digital inverter circuit, it means that:
+</p>
+
+<p>
+    <ul class="answers">
+<img src="blank.png" width="15" id="q17ai"/><input type="radio" name="q17" value="a" id="q17a"><label for="q17a">if the input voltage is high and positive, the output is also high but negative.</label><br>
+<img src="blank.png" width="15" id="q17bi"/><input type="radio" name="q17" value="b" id="q17b"><label for="q17b">if the input voltage is low and positive, the output is high and negative.</label><br>
+<img src="blank.png" width="15" id="q17ci"/><input type="radio" name="q17" value="c" id="q17c"><label for="q17c">if the input voltage is low and positive, the output voltage is high and positive, and vice versa.</label><br>
+<img src="blank.png" width="15" id="q17di"/><input type="radio" name="q17" value="c" id="q17d"><label for="q17d">if the input voltage is low and positive, the output voltage is high and positive, but not vice versa.</label><br>
+    </ul>
+</p>
+<script>
+  document.getElementById('q17a').checked = false;
+  document.getElementById('q17b').checked = false;
+  document.getElementById('q17c').checked = false;
+  document.getElementById('q17d').checked = false;
+answer_value[17] = "c";
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="question18"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.18</span>
+    <span style="color:blue;">Node Voltage</span></b></h2>
+Determine V<sub>x</sub>.
+</p>
+<img src="figs/3.10.jpg" width="274">
+
+<ul class="answers">
+<input type="text" name="q18" value=""
+       id="q18"><label for="q18">Volts </label> <button id="q18btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q18").value = "";
+answer_value[18] = 8;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question19"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.19</span>
+    <span style="color:blue;">Nodal Analysis</span></b></h2>
+Determine V<sub>R</sub>.
+</p>
+<img src="figs/3.11.jpg" width="307">
+
+<ul class="answers">
+<input type="text" name="q19" value=""
+       id="q19"><label for="q19">Volts </label> <button id="q19btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q19").value = "";
+answer_value[19] = 6;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question20"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.20</span>
+    <span style="color:blue;">Dependent Source</span></b></h2>
+Determine V<sub>x</sub>.
+</p>
+<img src="figs/3.12.jpg" width="303">
+
+<ul class="answers">
+<input type="text" name="q20" value=""
+       id="q20"><label for="q20">Volts </label> <button id="q20btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q20").value = "";
+answer_value[20] = 3;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question21"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.21</span>
+    <span style="color:blue;">Dependent Source</span></b></h2>
+Determine power dissipated in the 2 &Omega; resistor.
+</p>
+<img src="figs/3.13.jpg" width="303">
+
+<ul class="answers">
+<input type="text" name="q21" value=""
+       id="q21"><label for="q21">Watts </label> <button id="q21btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q21").value = "";
+answer_value[21] = 4.5;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question22"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.22</span>
+    <span style="color:blue;">Voltage</span></b></h2>
+Determine V<sub>x</sub>.
+</p>
+<img src="figs/3.14.jpg" width="296">
+
+<ul class="answers">
+<input type="text" name="q22" value=""
+       id="q22"><label for="q22">Volts </label> <button id="q22btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q22").value = "";
+answer_value[22] = 20;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question23"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.23</span>
+    <span style="color:blue;">Supermesh</span></b></h2>
+Determine I<sub>x</sub>.
+</p>
+<img src="figs/3.15.jpg" width="268">
+
+<ul class="answers">
+<input type="text" name="q23" value=""
+       id="q23"><label for="q23">Amps </label> <button id="q23btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q23").value = "";
+answer_value[23] = 1;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question24"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.24</span>
+    <span style="color:blue;">Thevenin Equivalent</span></b></h2>
+Find the Thevenin equivalent voltage at terminals (a,b).
+</p>
+<img src="figs/3.16.jpg" width="294">
+
+<ul class="answers">
+V<sub>Th</sub> =
+<input type="text" name="q24" value=""
+       id="q24"><label for="q24">Volts </label> <button id="q24btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q24").value = "";
+answer_value[24] = 4.8;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question25"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.25</span>
+    <span style="color:blue;">Thevenin Equivalent</span></b></h2>
+Find the Thevenin equivalent resistance at terminals (a,b).
+</p>
+<img src="figs/3.16.jpg" width="294">
+
+<ul class="answers">
+R<sub>Th</sub> =
+<input type="text" name="q25" value=""
+       id="q25"><label for="q25">&Omega; </label> <button id="q25btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q25").value = "";
+answer_value[25] = 5.4;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+<div class="question26"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.26</span>
+    <span style="color:blue;">Thevenin Equivalent</span></b></h2>
+Find the Thevenin equivalent voltage at terminals (a,b).
+</p>
+<img src="figs/3.17.jpg" width="294">
+
+<ul class="answers">
+V<sub>Th</sub> =
+<input type="text" name="q26" value=""
+       id="q26"><label for="q26">Volts </label> <button id="q26btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q26").value = "";
+answer_value[26] = 5;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="question27"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.27</span>
+    <span style="color:blue;">Thevenin Equivalent</span></b></h2>
+Find the Thevenin equivalent resistance at terminals (a,b).
+</p>
+<img src="figs/3.17.jpg" width="290">
+
+<ul class="answers">
+R<sub>Th</sub> =
+<input type="text" name="q27" value=""
+       id="q27"><label for="q27">&Omega; </label> <button id="q27btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q27").value = "";
+answer_value[27] = 4;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question28"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.28</span>
+    <span style="color:blue;">Norton Equivalent</span></b></h2>
+Find the Norton equivalent current at terminals (a,b).
+</p>
+<img src="figs/3.18.jpg" width="285">
+
+<ul class="answers">
+I<sub>N</sub> =
+<input type="text" name="q28" value=""
+       id="q28"><label for="q28">Amps </label> <button id="q28btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q28").value = "";
+answer_value[28] = 0;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question29"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.29</span>
+    <span style="color:blue;">Norton Equivalent</span></b></h2>
+Find the Norton equivalent resistance at terminals (a,b).
+</p>
+<img src="figs/3.18.jpg" width="285">
+
+<ul class="answers">
+R<sub>N</sub> =
+<input type="text" name="q29" value=""
+       id="q29"><label for="q29">&Omega; </label> <button id="q29btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q29").value = "";
+answer_value[29] = 0.4;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question30"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.30</span>
+    <span style="color:blue;">Maximum Power</span></b></h2>
+What value of R<sub>L</sub> will extract maximum power from the circuit?
+</p>
+<img src="figs/3.19.jpg" width="310">
+
+<ul class="answers">
+R<sub>L</sub> =
+<input type="text" name="q30" value=""
+       id="q30"><label for="q30">&Omega; </label> <button id="q30btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q30").value = "";
+answer_value[30] = 10;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question31"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.31</span>
+    <span style="color:blue;">Node Voltage</span></b></h2>
+ Determine V<sub>x</sub>.
+</p>
+<img src="figs/3.20.jpg" width="274">
+
+<ul class="answers">
+<input type="text" name="q31" value=""
+       id="q31"><label for="q31">Volts </label> <button id="q31btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q31").value = "";
+answer_value[31] = 16;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question32"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.32</span>
+    <span style="color:blue;">Nodal Analysis</span></b></h2>
+Determine I<sub>x</sub>.
+</p>
+<img src="figs/3.21.jpg" width="300">
+
+<ul class="answers">
+<input type="text" name="q32" value=""
+       id="q32"><label for="q32">Amps </label> <button id="q32btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q32").value = "";
+answer_value[32] = 4;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question33"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.33</span>
+    <span style="color:blue;">Dependent Source</span></b></h2>
+Determine V<sub>x</sub>.
+</p>
+<img src="figs/3.22.jpg" width="303">
+
+<ul class="answers">
+<input type="text" name="q33" value=""
+       id="q33"><label for="q33">Volts </label> <button id="q33btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q33").value = "";
+answer_value[33] = 2;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question34"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.34</span>
+    <span style="color:blue;">Supermesh</span></b></h2>
+Determine I<sub>x</sub>.
+</p>
+<img src="figs/3.23.jpg" width="268">
+
+<ul class="answers">
+<input type="text" name="q34" value=""
+       id="q34"><label for="q34">Amps </label> <button id="q34btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q34").value = "";
+answer_value[34] = 0;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question35"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.35</span>
+    <span style="color:blue;">Thevenin Equivalent</span></b></h2>
+Find the Thevenin equivalent voltage at terminals (a,b).
+</p>
+<img src="figs/3.24.jpg" width="294">
+
+<ul class="answers">
+V<sub>Th</sub> =
+<input type="text" name="q35" value=""
+       id="q35"><label for="q35">Volts </label> <button id="q35btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q35").value = "";
+answer_value[35] = 9.6;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question36"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.36</span>
+    <span style="color:blue;">Thevenin Equivalent</span></b></h2>
+Find the Thevenin equivalent resistance at terminals (a,b).
+</p>
+<img src="figs/3.24.jpg" width="294">
+
+<ul class="answers">
+R<sub>Th</sub> =
+<input type="text" name="q36" value=""
+       id="q36"><label for="q36">&Omega; </label> <button id="q36btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q36").value = "";
+answer_value[36] = 5.4;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+<div class="question37"  style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 3.37</span>
+    <span style="color:blue;">Thevenin Equivalent</span></b></h2>
+Find the Thevenin equivalent voltage at terminals (a,b).
+</p>
+<img src="figs/3.25.jpg" width="290">
+
+<ul class="answers">
+V<sub>Th</sub> =
+<input type="text" name="q37" value=""
+       id="q37"><label for="q37">Volts </label> <button id="q37btn">Check Answer</button>
+</ul>
+
+<script>
+document.getElementById("q37").value = "";
+answer_value[37] = 2;
+</script>
+<br>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    var i;
+    var count=0;
+    var scores = [];
+    var nclicks = [];
+    var nquestions = 37;
+    var askForSolutionWhenIncorrect = [];
+
+    for (i = 1; i < nquestions+1; i++) {
+        scores[i] = 0;
+        nclicks[i]=0;
+        askForSolutionWhenIncorrect[i] = false;
+    }// endfor
+
+$(function(){
+
+ var i;
+ var count=0;
+  //var debug=1;// true
+  var debug=0;// false
+  if( debug == 1) {
+    for (i=1; i<nquestions+1;i++){
+       count++;
+       $(".question"+(i)).css("display", "block");
+       $(".score"+(i)).css("display", "table-row");
+    } //endfor
+  }//endif
+
+ // display a random selection of 5 questions
+ var thresh=6./(nquestions-1.);
+ while (debug==0 && count < 5) {
+   for (i = 1; i < nquestions+1; i++) {
+     if(Math.random() <thresh && count<5) {
+       count++;
+       $(".question"+(i)).css("display", "block");
+       $(".score"+(i)).css("display", "table-row");
+     }
+   }//endfor
+   if(count<5){
+      count=0;
+      for (i = 1; i < nquestions+1; i++) {
+       $(".question"+(i)).css("display", "none");
+       $(".score"+(i)).css("display", "none");
+      }
+   }
+ }//end while
+
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+</style>
+
+
+<!-- Trigger/Open The Modal -->
+<!-- <button id="myBtn">Open Modal</button> -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="width: 25%;">
+    <div id="mheader" class="modal-header">
+      <span class="close">&times;</span>
+      <div id="the_header"></div>
+    </div>
+    <div id="the_message" class="modal-body">
+    </div>
+    <div id="mfooter" class="modal-footer">
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+//var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+//btn.onclick = function() {
+//    modal.style.display = "block";
+    //}
+
+      // just some junk to init it:
+      var refocus_name = "answer_dialog";
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+      modal.style.display = "none";
+      //alert("refocus="+refocus_name);
+      document.getElementById(refocus_name).focus();
+
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      //alert("refocus="+refocus_name);
+      document.getElementById(refocus_name).focus();
+    }
+}
+</script>
+
+
+<script>
+
+$(document).ready(function()
+{
+
+
+    var header_wrong = "<h3>Incorrect</h3>";
+    var answer_wrong="I'm sorry, that is incorrect";
+    var header_correct="<h3>Correct</h3>";
+    var answer_correct="YES!, that is correct!";
+
+    var color_correct="#5cb85c";
+    var color_wrong = "#FF3343";
+
+    var answer_error = 0.01;
+
+
+
+    $("#redo").click(function() {
+            location.reload();
+    });
+    $("#newchapter").click(function() {
+            location.replace("chapters.html");
+    });
+
+
+
+
+// for each short answer need to have 2 functions:
+// a "click" and a "keypress":
+// multiple choice just needs "click"
+
+
+
+
+    $("#q1t").click(function() {
+            multiple_choice(1,"t");
+    });
+    $("#q1f").click(function() {
+            multiple_choice(1,"f");
+    });
+
+
+    $("#q2t").click(function() {
+            multiple_choice(2,"t");
+    });
+    $("#q2f").click(function() {
+            multiple_choice(2,"f");
+    });
+
+
+    $("#q3t").click(function() {
+            multiple_choice(3,"t");
+    });
+    $("#q3f").click(function() {
+            multiple_choice(3,"f");
+    });
+
+
+    $("#q4t").click(function() {
+            multiple_choice(4,"t");
+    });
+    $("#q4f").click(function() {
+            multiple_choice(4,"f");
+    });
+
+
+    $("#q5t").click(function() {
+            multiple_choice(5,"t");
+    });
+    $("#q5f").click(function() {
+            multiple_choice(5,"f");
+    });
+
+
+    $("#q6t").click(function() {
+            multiple_choice(6,"t");
+    });
+    $("#q6f").click(function() {
+            multiple_choice(6,"f");
+    });
+
+
+    $("#q7t").click(function() {
+            multiple_choice(7,"t");
+    });
+    $("#q7f").click(function() {
+            multiple_choice(7,"f");
+    });
+
+
+    $("#q8t").click(function() {
+            multiple_choice(8,"t");
+    });
+    $("#q8f").click(function() {
+            multiple_choice(8,"f");
+    });
+
+
+    $("#q9a").click(function() {
+            multiple_choice(9,"a");
+    });
+    $("#q9b").click(function() {
+            multiple_choice(9,"b");
+    });
+    $("#q9c").click(function() {
+            multiple_choice(9,"c");
+    });
+
+
+    $("#q10a").click(function() {
+            multiple_choice(10,"a");
+    });
+    $("#q10b").click(function() {
+            multiple_choice(10,"b");
+    });
+    $("#q10c").click(function() {
+            multiple_choice(10,"c");
+    });
+    $("#q10d").click(function() {
+            multiple_choice(10,"d");
+    });
+
+
+    $("#q11a").click(function() {
+            multiple_choice(11,"a");
+    });
+    $("#q11b").click(function() {
+            multiple_choice(11,"b");
+    });
+    $("#q11c").click(function() {
+            multiple_choice(11,"c");
+    });
+    $("#q11d").click(function() {
+            multiple_choice(11,"d");
+    });
+
+
+    $("#q12a").click(function() {
+            multiple_choice(12,"a");
+    });
+    $("#q12b").click(function() {
+            multiple_choice(12,"b");
+    });
+    $("#q12c").click(function() {
+            multiple_choice(12,"c");
+    });
+    $("#q12d").click(function() {
+            multiple_choice(12,"d");
+    });
+
+
+    $("#q13a").click(function() {
+            multiple_choice(13,"a");
+    });
+    $("#q13b").click(function() {
+            multiple_choice(13,"b");
+    });
+    $("#q13c").click(function() {
+            multiple_choice(13,"c");
+    });
+
+
+    $("#q14a").click(function() {
+            multiple_choice(14,"a");
+    });
+    $("#q14b").click(function() {
+            multiple_choice(14,"b");
+    });
+    $("#q14c").click(function() {
+            multiple_choice(14,"c");
+    });
+
+
+    $("#q15a").click(function() {
+            multiple_choice(15,"a");
+    });
+    $("#q15b").click(function() {
+            multiple_choice(15,"b");
+    });
+    $("#q15c").click(function() {
+            multiple_choice(15,"c");
+    });
+
+
+    $("#q16a").click(function() {
+            multiple_choice(16,"a");
+    });
+    $("#q16b").click(function() {
+            multiple_choice(16,"b");
+    });
+    $("#q16c").click(function() {
+            multiple_choice(16,"c");
+    });
+
+
+    $("#q17a").click(function() {
+            multiple_choice(17,"a");
+    });
+    $("#q17b").click(function() {
+            multiple_choice(17,"b");
+    });
+    $("#q17c").click(function() {
+            multiple_choice(17,"c");
+    });
+    $("#q17d").click(function() {
+            multiple_choice(17,"d");
+    });
+
+
+    $("#q8btn").click(function() {
+            short_answer(8);
+    });
+
+
+
+    $("#q18btn").click(function() {
+            short_answer(18);
+    });
+    $("#q19btn").click(function() {
+            short_answer(19);
+    });
+    $("#q20btn").click(function() {
+            short_answer(20);
+    });
+    $("#q21btn").click(function() {
+            short_answer(21);
+    });
+    $("#q22btn").click(function() {
+            short_answer(22);
+    });
+    $("#q23btn").click(function() {
+            short_answer(23);
+    });
+    $("#q24btn").click(function() {
+            short_answer(24);
+    });
+    $("#q25btn").click(function() {
+            short_answer(25);
+    });
+    $("#q26btn").click(function() {
+            short_answer(26);
+    });
+    $("#q27btn").click(function() {
+            short_answer(27);
+    });
+    $("#q28btn").click(function() {
+            short_answer(28);
+    });
+    $("#q29btn").click(function() {
+            short_answer(29);
+    });
+    $("#q30btn").click(function() {
+            short_answer(30);
+    });
+    $("#q31btn").click(function() {
+            short_answer(31);
+    });
+
+    $("#q32btn").click(function() {
+            short_answer(32);
+    });
+    $("#q33btn").click(function() {
+            short_answer(33);
+    });
+    $("#q34btn").click(function() {
+            short_answer(34);
+    });
+
+    $("#q35btn").click(function() {
+            short_answer(35);
+    });
+    $("#q36btn").click(function() {
+            short_answer(36);
+    });
+    $("#q37btn").click(function() {
+            short_answer(37);
+    });
+
+
+
+
+
+    $("#q18").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(18);
+	}
+    });
+
+    $("#q19").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(19);
+	}
+    });
+
+    $("#q20").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(20);
+	}
+    });
+
+    $("#q21").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(21);
+	}
+    });
+
+    $("#q22").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(22);
+	}
+    });
+
+    $("#q23").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(23);
+	}
+    });
+
+    $("#q24").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(24);
+	}
+    });
+
+    $("#q25").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(25);
+	}
+    });
+
+    $("#q26").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(26);
+	}
+    });
+
+    $("#q27").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(27);
+	}
+    });
+
+    $("#q28").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(28);
+	}
+    });
+
+    $("#q29").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(29);
+	}
+    });
+
+    $("#q30").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(30);
+	}
+    });
+
+    $("#q31").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(31);
+	}
+    });
+
+
+
+    $("#q32").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(32);
+	}
+    });
+
+    $("#q33").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(33);
+	}
+    });
+
+    $("#q34").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(34);
+	}
+    });
+
+
+    $("#q35").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(35);
+	}
+    });
+
+    $("#q36").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(36);
+	}
+    });
+
+    $("#q37").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(37);
+	}
+    });
+
+    $("#q8").keypress(function(e) {
+	var key = e.which;
+	if(key == 13)  // the enter key code
+	{
+            short_answer(8);
+	}
+    });
+
+
+
+function replace_with_answer(qnum)
+{
+   document.getElementById('the_header').innerHTML="";
+document.getElementById('the_message').innerHTML="<div style=\"position:relative; left: -125px; top: -10px;overflow-y:auto;width:200%;max-height:600px;\"><img src=\"answers/3."+qnum.toString()+".PNG\" width=\"100%\"></div>";
+
+   //document.getElementById('the_message').innerHTML="<img src=\"answers/3."+qnum.toString()+".PNG\" width=\"200%\" style=\"position:relative; left: -125px; top: -10px;\">";
+}
+
+
+function short_answer(qnum)
+{
+    var qstr = "q"+qnum.toString();
+    var guess = document.getElementById(qstr).value;
+    var metric;
+    if(Math.abs(answer_value[qnum])<0.01) {
+       metric = Math.abs(guess); // deal with answers that are ==0
+    } else {
+       metric = Math.abs(guess-answer_value[qnum])/Math.abs(answer_value[qnum]);
+    }
+    if( metric < answer_error) {
+        document.getElementById('the_header').innerHTML=header_correct;
+        document.getElementById('the_message').innerHTML=answer_correct  + "<br><button id=\"showanswer\">click here for solution</button>";
+        document.getElementById('mheader').style.backgroundColor=color_correct;
+        document.getElementById('mfooter').style.backgroundColor=color_correct;
+	document.getElementById('myModal').style.display = "block";
+        nclicks[qnum]++;
+        if( nclicks[qnum] <3 && scores[qnum]==0 && askForSolutionWhenIncorrect[qnum] === false) {
+            scores[qnum] = 20./nclicks[qnum];
+        }
+
+        document.getElementById('showanswer').onclick=function(){replace_with_answer(qnum);};
+    } else {
+        document.getElementById('the_header').innerHTML=header_wrong;
+        document.getElementById('the_message').innerHTML=answer_wrong + "<br><button id=\"showanswer\">click here for solution</button>";
+        document.getElementById('mheader').style.backgroundColor=color_wrong;
+        document.getElementById('mfooter').style.backgroundColor=color_wrong;
+	document.getElementById('myModal').style.display = "block";
+        document.getElementById(qstr).value = "";
+        refocus_name = qstr;
+        nclicks[qnum]++;
+
+        document.getElementById('showanswer').onclick=function(){
+            if(nclicks[qnum] <2){
+                if(confirm("Showing this solution will result in 0 points. Are you sure?")){
+                    replace_with_answer(qnum);
+                    //student gets automatic 0
+                    scores[qnum] = 0
+                    askForSolutionWhenIncorrect[qnum] = true;
+                    update_score(qnum)
+                }
+            } else {
+                replace_with_answer(qnum);
+                //student gets automatic 0
+                scores[qnum] = 0
+                askForSolutionWhenIncorrect[qnum] = true;
+                update_score(qnum)
+            }
+        };
+    }
+    update_score(qnum);
+}// end func: short_answer()
+
+
+
+function multiple_choice(qnum,which)
+{
+    var qstr="q"+qnum.toString()+which+"i";
+    refocus_name = qstr;
+    if (which == answer_value[qnum]) {
+	document.getElementById('the_header').innerHTML=header_correct;
+	document.getElementById('the_message').innerHTML=answer_correct + "<br><button id=\"showanswer\">click here for solution</button>";
+	document.getElementById('mheader').style.backgroundColor=color_correct;
+	document.getElementById('mfooter').style.backgroundColor=color_correct;
+	document.getElementById('myModal').style.display = "block";
+	document.getElementById(qstr).src="correct.png";
+        nclicks[qnum]++;
+        if( nclicks[qnum] <3 && askForSolutionWhenIncorrect[qnum] === false) {
+            scores[qnum] = 20./nclicks[qnum];
+        }
+        update_score(qnum);
+
+        document.getElementById('showanswer').onclick=function(){replace_with_answer(qnum);};
+    } else {
+	document.getElementById('the_header').innerHTML=header_wrong;
+	document.getElementById('the_message').innerHTML=answer_wrong + "<br><button id=\"showanswer\">click here for solution</button>";
+	document.getElementById('mheader').style.backgroundColor=color_wrong;
+	document.getElementById('mfooter').style.backgroundColor=color_wrong;
+	document.getElementById('myModal').style.display = "block";
+	document.getElementById(qstr).src="wrong.png";
+        nclicks[qnum]++;
+
+        document.getElementById('showanswer').onclick=function(){
+            if(nclicks[qnum] <2){
+                if(confirm("Showing this solution will result in 0 points. Are you sure?")){
+                    replace_with_answer(qnum);
+                    //student gets automatic 0
+                    scores[qnum] = 0
+                    askForSolutionWhenIncorrect[qnum] = true;
+                    update_score(qnum)
+                }
+            } else {
+                replace_with_answer(qnum);
+                //student gets automatic 0
+                scores[qnum] = 0
+                askForSolutionWhenIncorrect[qnum] = true;
+                update_score(qnum)
+            }
+        };
+    }
+
+}
+
+
+
+
+function update_score(qnum)
+{
+    var total_score=0;
+    var total_possible = 100; //count*20;
+
+    for (i = 1; i < nquestions+1; i++) {
+        total_score += scores[i];
+    }// endfor
+
+    document.getElementById('score_total').innerHTML="<td>Total</td><td>"+total_score.toString()+" / "+total_possible.toString()+"</td>";
+
+    var qstr = "score"+qnum.toString()+"v";
+    if( scores[qnum] > 0) {
+    document.getElementById(qstr).innerHTML=scores[qnum].toString()+" /  &nbsp;&nbsp;20";
+    }
+}
+
+
+});
+</script>
+
+
+
+
+<br>
+<button id="redo">Redo this Chapter</button>
+<br>
+<button id="newchapter">Select Another Chapter</button>
+  </body>
+  </html>

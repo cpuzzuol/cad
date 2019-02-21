@@ -1,0 +1,535 @@
+<html>
+
+  <head>
+
+
+    
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+ <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+    <script src="quiz-1.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+    
+</head>
+  
+  <body>
+
+
+<div id="answer_dialog">
+</div>
+
+
+<div id="scorediv"  style="float: right;">
+</div>
+
+
+
+<h1 style="color:blue;"><b>Test Your Understanding</b></h1>
+<h1 style="color:red;"><b>Chapter 1: Circuit Terminology</b></h1>
+
+
+
+
+<div class="question1" style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 1.1</span>
+<span style="color:blue;">Nodes, Loops, and Meshes</span></b></h2>
+An extraordinary node is a node connected to a minimum of how many
+electrical elements?
+</p> 
+
+<ul class="answers">            
+<input type="text" name="q1" value="" id="q1"><label for="q1"></label><br/>           
+</ul>
+    <div id="q1_header_wrong" class="modal"><h3>Incorrect</h3></div>
+    <div id="q1_answer_wrong" class="modal">I'm sorry, that is incorrect<br> </div>
+    <div id="q1_header_correct" class="modal"><h3>Correct</h3></div>
+    <div id="q1_answer_correct" class="modal">YES!, that is correct!<br> </div>
+
+<script>
+document.getElementById("q1").value = "";
+  var q1_answer_value = 3;
+  var q1_answer_error =0.01; // 1% error.
+  var q1_color_wrong = "#FF3343";
+  var q1_color_correct = "#5cb85c";
+</script>
+</div>
+
+
+
+<div class="question2" style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 1.2</span>
+<span style="color:blue;">Node Voltage</span></b></h2>
+For the circuit shown, what is the voltage V<sub>2</sub> at the
+indicated node relative to the ground node?
+</p> 
+<img src="ch1figs/1.2.jpg" width="451">
+
+<ul class="answers">            
+<input type="text" name="q2" value="" id="q2"><label for="q2">Answer in Volts</label><br/>           
+</ul>
+    <div id="q2_header_wrong" class="modal"><h3>Incorrect</h3></div>
+    <div id="q2_answer_wrong" class="modal">I'm sorry, that is incorrect<br> </div>
+    <div id="q2_header_correct" class="modal"><h3>Correct</h3></div>
+    <div id="q2_answer_correct" class="modal">YES!, that is correct!<br> </div>
+
+<script>
+document.getElementById("q2").value = "";
+  var q2_answer_value = 6;
+  var q2_answer_error =0.01; // 1% error.
+  var q2_color_wrong = "#FF3343";
+  var q2_color_correct = "#5cb85c";
+</script>
+</div>
+
+
+
+
+<div class="question3" style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 1.3</span>
+<span style="color:blue;">Passive Sign Convention</span></b></h2>
+For the circuit shown, how much power is delivered to Device 3?
+</p> 
+<img src="ch1figs/1.3.jpg" width="462">
+
+<ul class="answers">            
+<input type="text" name="q3" value="" id="q3"><label for="q3">Answer in Watts</label><br/>           
+</ul>
+    <div id="q3_header_wrong" class="modal"><h3>Incorrect</h3></div>
+    <div id="q3_answer_wrong" class="modal">I'm sorry, that is incorrect<br> </div>
+    <div id="q3_header_correct" class="modal"><h3>Correct</h3></div>
+    <div id="q3_answer_correct" class="modal">YES!, that is correct!<br> </div>
+
+<script>
+document.getElementById("q3").value = "";
+  var q3_answer_value = 10;
+  var q3_answer_error =0.01; // 1% error.
+  var q3_color_wrong = "#FF3343";
+  var q3_color_correct = "#5cb85c";
+</script>
+</div>
+
+
+
+
+<div class="question4" style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 1.4</span>
+<span style="color:blue;">Current</span></b></h2>
+   The plot shown in the figure displays charge <i>q(t)</i> as a function of
+<i>t</i>. What is the corresponding current at time <i>t</i>=1.5 s?
+
+</p> 
+<img src="ch1figs/1.4.jpg" width="467">
+
+<ul class="answers">            
+<input type="text" name="q4" value="" id="q4"><label for="q4">Answer in Amps</label><br/>           
+</ul>
+    <div id="q4_header_wrong" class="modal"><h3>Incorrect</h3></div>
+    <div id="q4_answer_wrong" class="modal">I'm sorry, that is incorrect<br> </div>
+    <div id="q4_header_correct" class="modal"><h3>Correct</h3></div>
+    <div id="q4_answer_correct" class="modal">YES!, that is correct!<br> </div>
+
+<script>
+document.getElementById("q4").value = "";
+  var q4_answer_value = 20;
+  var q4_answer_error =0.01; // 1% error.
+  var q4_color_wrong = "#FF3343";
+  var q4_color_correct = "#5cb85c";
+</script>
+</div>
+
+
+
+
+
+<div class="question5" style="display:none;">
+<p class="question">
+<h2><b><span style="color:red;">Test 1.5</span>
+<span style="color:blue;">Dependent Source</span></b></h2>
+Determine V<sub>y</sub> in the circuit shown.
+
+</p> 
+<img src="ch1figs/1.5.jpg" width="408">
+
+<ul class="answers">            
+<input type="text" name="q5" value="" id="q5"><label for="q5">Answer in Volts</label><br/>           
+</ul>
+    <div id="q5_header_wrong" class="modal"><h3>Incorrect</h3></div>
+    <div id="q5_answer_wrong" class="modal">I'm sorry, that is incorrect<br> </div>
+    <div id="q5_header_correct" class="modal"><h3>Correct</h3></div>
+    <div id="q5_answer_correct" class="modal">YES!, that is correct!<br> </div>
+
+<script>
+document.getElementById("q5").value = "";
+  var q5_answer_value = 1.8;
+  var q5_answer_error =0.01; // 1% error.
+  var q5_color_wrong = "#FF3343";
+  var q5_color_correct = "#5cb85c";
+</script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="question10"  style="display:none;">
+
+    <p class="question">10. $x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$ What is the answer to this question?</p>        
+
+    <ul class="answers">
+<img src="blank.png" width="15" id="q10ai"/><input type="radio" name="q10" value="a" id="q10a"><label for="q10a">Answer 1</label><br>       
+<img src="blank.png" width="15" id="q10bi"/><input type="radio" name="q10" value="b" id="q10b"><label for="q10b">Answer 2</label><br>          
+<img src="blank.png" width="15" id="q10ci"/><input type="radio" name="q10" value="c" id="q10c"><label for="q10c">Answer 3</label><br>        
+<img src="blank.png" width="15" id="q10di"/><input type="radio" name="q10" value="d" id="q10d"><label for="q10d">Answer 4</label><br>
+    </ul>
+    
+    <div id="q10a_answer" class="modal">I'm sorry, that is incorrect<br> You see, the blah in blah is inconsistent.<br> $x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$
+    </div>
+    <div id="q10a_header" class="modal"><h3>Incorrect</h3></div>
+    <div id="q10b_answer" class="modal">I'm sorry, that is incorrect<br> You see, the B blah in blah is inconsistent.<br> $x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$
+    </div>
+    <div id="q10b_header" class="modal"><h3>Incorrect</h3></div>
+    <div id="q10c_answer" class="modal">I'm sorry, that is incorrect<br> You see, the C blah in blah is inconsistent.<br> $x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$
+    </div>
+    <div id="q10c_header" class="modal"><h3>Incorrect</h3></div>
+    <div id="q10d_answer" class="modal">YES!, that is correct!<br> You see, the D blah in blah is inserted here:<br> $x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$
+    </div>
+    <div id="q10d_header" class="modal"><h3>Correct</h3></div>
+    
+<script>
+  document.getElementById('q10a').checked = false;
+  document.getElementById('q10b').checked = false;
+  document.getElementById('q10c').checked = false;
+  document.getElementById('q10d').checked = false;
+  var q10a_img = "wrong.png";
+  var q10b_img = "wrong.png";
+  var q10c_img = "wrong.png";
+  var q10d_img = "correct.png";
+  var q10a_color = "#FF3343";
+  var q10b_color = "#FF3343";
+  var q10c_color = "#FF3343";
+  var q10d_color = "#5cb85c";
+</script>
+</div>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="question12" style="display:none;">
+<p class="question">12. What is the answer to this question?</p>        
+
+<ul class="answers">            
+<input type="text" name="q12" value="" id="q12"><label for="q12">Answer in Amps</label><br/>           
+</ul>
+    <div id="q12_header_wrong" class="modal"><h3>Incorrect</h3></div>
+    <div id="q12_answer_wrong" class="modal">I'm sorry, that is incorrect<br> You see, the C blah in blah is inconsistent.<br> $x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$</div>
+    <div id="q12_header_correct" class="modal"><h3>Correct</h3></div>
+    <div id="q12_answer_correct" class="modal">YES!, that is correct!<br> You see, the C blah in blah is inconsistent.<br> $x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$</div>
+
+<script>
+document.getElementById("q12").value = "";
+  var q12_answer_value = 2.3;
+  var q12_answer_error =0.01; // 1% error.
+  var q12_color_wrong = "#FF3343";
+  var q12_color_correct = "#5cb85c";
+</script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+</div>
+<div class="question3" style="display:none;">
+Question 3 <br>
+</div>
+<div class="question4" style="display:none;">
+Question 4 <br>
+</div>
+<div class="question5" style="display:none;">
+Question 5 <br>
+</div>
+<div class="question6" style="display:none;">
+Question 6 <br>
+</div>
+<div class="question7" style="display:none;">
+Question 7 <br>
+</div>
+<div class="question8" style="display:none;">
+Question 8 <br>
+</div>
+<div class="question9" style="display:none;">
+Question 9 <br>
+</div>
+
+<div class="question11" style="display:none;">
+Question 11 <br>
+</div>
+
+
+<div class="question13" style="display:none;">
+Question 13 <br>
+</div>
+<div class="question14" style="display:none;">
+Question 14 <br>
+</div>
+<div class="question15" style="display:none;">
+Question 15 <br>
+</div>
+<div class="question16" style="display:none;">
+Question 16 <br>
+</div>
+<div class="question17" style="display:none;">
+Question 17 <br>
+</div>
+<div class="question18" style="display:none;">
+Question 18 <br>
+</div>
+<div class="question19" style="display:none;">
+Question 19 <br>
+</div>
+<div class="question20" style="display:none;">
+Question 20 <br>
+</div>
+<div class="question21" style="display:none;">
+Question 21 <br>
+</div>
+
+
+<script type="text/javascript">
+    var i;
+    var count=0;
+    var scores = [];
+    var nclicks = [];
+    for (i = 1; i < 22; i++) {
+        scores[i] = 0;
+        nclicks[i]=0;
+    }// endfor
+
+$(function(){
+
+
+ // display a random selection of 5 questions
+ var i;
+ for (i = 1; i < 22; i++) {
+   if(Math.random() <0.5 && count<5) { 
+       count++;
+       $(".question"+(i)).css("display", "block");
+   }
+ }//endfor
+
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+</style>
+
+
+<!-- Trigger/Open The Modal -->
+<!-- <button id="myBtn">Open Modal</button> -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div id="mheader" class="modal-header">
+      <span class="close">&times;</span>
+      <div id="the_header"></div>
+    </div>
+    <div id="the_message" class="modal-body">
+    </div>
+    <div id="mfooter" class="modal-footer">
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+//var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+//btn.onclick = function() {
+//    modal.style.display = "block";
+    //}
+
+
+    
+      // jsut some junk to init it:
+      var refocus_name = "answer_dialog";
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+      modal.style.display = "none";
+      //alert("refocus="+refocus_name);
+      document.getElementById(refocus_name).focus();
+      
+}
+      
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      //alert("refocus="+refocus_name);
+      document.getElementById(refocus_name).focus();
+    }
+}
+</script>
+
+  </body>
+  </html>
