@@ -49,4 +49,15 @@ display: none;
 #closing {
 display: none;
 font-style: italic;
-} 
+}
+
+#scorediv{
+    position: fixed;
+    right: 41px;
+}
+
+@media only screen and (max-width: 800px) {
+    #scorediv{
+        position: relative;
+    }
+}
